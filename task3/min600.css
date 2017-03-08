@@ -1,0 +1,44 @@
+html{
+    font-size: 62.5%;
+    background-color: #68cdd5;
+}
+img{
+    max-width: 100%;
+}
+
+.back{
+    background-image: url("back.png");
+    width: 54px;
+    height: 54px;
+    left: 20px;
+    top: 20px;
+
+}
+.logo{
+    background-image: url("logo.png");
+    width: 180px;
+    height: 70px;
+    margin: 8% auto;
+}
+.int{
+    margin: 10% 10%;
+    color:white;
+    font-size: 3rem;
+    text-align:center;
+}
+.foot1{
+    background-image: url("foot1.png");
+    width: 130px;
+    height: 130px;
+    margin:0 0 0 22%;
+    float: left;
+    max-width: 100%;
+}
+.foot2{
+    background-image: url("foot2.png");
+    width: 102px;
+    height: 130px;
+    margin: 0 22% 0 0;
+    float: right;
+    max-width: 100%;
+}
