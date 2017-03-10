@@ -1,0 +1,76 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    margin: 0;
+    background-color: #eff0f4;
+}
+.header{
+    position: relative;
+    margin: 0;
+    background-color: #5fc0cd;
+    color: white;
+    height: 4.5rem;
+}
+.header1{
+    position: absolute;
+    color: white;
+    text-decoration: none;
+    left: 1.5rem;
+    bottom: 1.2rem;
+    font-size: 1.8rem;
+}
+.header2{
+    margin: 0;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 1.2rem;
+    text-align: center;
+    width: 100%;
+}
+.header3{
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    right: 1.5rem;
+    bottom: 1.2rem;
+    font-size: 1.8rem;
+}
+.main{
+    position: relative;
+}
+input{
+    border: none;
+    vertical-align: center;
+    position: absolute;
+    height: 4rem;
+    width: 100%;
+}
+input:focus{
+    outline: none;
+}
+.username{
+    background-color: white;
+    margin-top: 0.6rem;
+    padding-left: 2.5rem;
+}
+
+.password{
+    background-color: white;
+    margin-top: 0.6rem;
+    padding-left: 2.5rem;
+}
+.login{
+    width: 100%;
+    height: 4rem;
+    background-color: #5fc0cd;
+    color: white;
+    margin-top: 2.5rem;
+    border: none;
+    font-size: 2rem;
+}
+.fog{
+    text-decoration: none;
+    float: right;
+    margin-right: 1rem;
+}
