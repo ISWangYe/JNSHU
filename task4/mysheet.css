@@ -44,7 +44,7 @@ input{
     vertical-align: center;
     position: absolute;
     height: 4rem;
-    width: 100%;
+    width: 70%;
 }
 input:focus{
     outline: none;
@@ -70,7 +70,7 @@ input:focus{
     font-size: 2rem;
 }
 .fog{
-    text-decoration: none;
+    color: #5fc0cd;
     float: right;
     margin-right: 1rem;
 }
