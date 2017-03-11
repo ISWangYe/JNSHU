@@ -44,7 +44,7 @@ input{
     vertical-align: center;
     position: absolute;
     height: 4rem;
-    width: 70%;
+    width: 60%;
 }
 input:focus{
     outline: none;
