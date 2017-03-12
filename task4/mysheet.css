@@ -70,6 +70,7 @@ input:focus{
     font-size: 2rem;
 }
 .fog{
+    text-decoration: none;
     color: #5fc0cd;
     float: right;
     margin-right: 1rem;
