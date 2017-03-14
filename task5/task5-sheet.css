@@ -1,0 +1,158 @@
+html{
+    font-size: 62.5%;
+    height: 100%;
+}
+body{
+    margin: 0;
+}
+.header{
+    position: fixed;
+    margin: 0;
+    background-color: #5fc0cd;
+    color: white;
+    height: 4rem;
+    width: 100%;
+}
+.back{
+    position: absolute;
+    margin:0;
+    left: 2.1rem;
+    top: 1.5rem;
+}
+.pagename{
+    text-align: center;
+    margin: 0;
+    padding-top: 1.3rem;
+    font-size: 1.7rem;
+}
+.personal-information{
+    background-image: url("task5-bgimgs.png");
+    background-repeat:no-repeat;
+    background-size: cover;
+    margin: 0;
+    color: white;
+}
+.head{
+    padding-left: 2rem;
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+}
+.name{
+    font-size: 1.6rem;
+    position: absolute;
+    top: 6.5rem;
+    left: 10rem;
+}
+.age{
+    font-size: 1.4rem;
+    position: absolute;
+    top: 7rem;
+    left: 15rem;
+}
+.adress{
+    font-size: 1.2rem;
+    position: absolute;
+    top: 8.5rem;
+    left: 10rem;
+}
+.main{
+    position: relative;
+    margin-bottom: 5rem;
+}
+.skill{
+    padding-left: 0.8rem;
+    margin: 1.5rem 1.3rem ;
+    border-left-style: solid;
+    border-left-color: #5fc0cd;
+    border-left-width: 2px;
+}
+.introduce{
+    top: -1rem;
+    font-size: 1.4rem;
+    border-top: solid 1px #e1e5e7;
+    border-bottom: solid 1px #e1e5e7;
+}
+.req-inf{
+    margin:0;
+    padding-bottom: 0.8rem;
+}
+.inhome{
+    font-size: 1.4rem;
+    background-image: url("task5-star.png");
+    display: inline-block;
+    background-repeat: no-repeat;
+    padding-left: 1.2rem;
+    padding-right: 0.5rem;
+    line-height: 100%;
+    border-right: solid #e1e5e7 0.5px;
+    margin-top: 1rem;
+}
+.notfood{
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    background-image: url("task5-star.png");
+    display: inline-block;
+    background-repeat: no-repeat;
+    padding-left: 1.2rem;
+    line-height: 100%;
+}
+li{
+    border-top: solid #e1e5e7 1px;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    margin-right: 0.8rem;
+}
+.print {
+    padding-left: 0.8rem;
+    padding-right:0.6rem;
+    position: absolute;
+    border-right: solid 1px #e1e5e7;
+    color: #999999;
+}
+.ans{
+    margin-left: 7.1rem;
+}
+.ans-text{
+    color: red;
+    margin-left: 7.1rem;
+}
+ul{
+    margin-bottom: 0;
+    padding-left: 1rem;
+    list-style:none;
+}
+.footer{
+    line-height: 4rem;
+    width: 100%;
+    cursor: pointer;
+    bottom: 0;
+    position: fixed;
+    right: 0;
+    left:0;
+    background-color: white;
+}
+.massage{
+    text-align: center;
+    display: inline-block;
+    font-size: 1.7rem;
+    text-decoration: none;
+    border: solid #5fc0cd ;
+    border-radius: 8px;
+    color: #5fc0cd;
+    background-color: white;
+    width: 43%;
+    margin-right: 3%;
+    margin-left: 2%;
+}
+.callphone{
+    display: inline-block;
+    text-align: center;
+    background-color: #5fc0cd;
+    color: white;
+    font-size: 1.7rem;
+    border: solid #5fc0cd;
+    border-radius: 8px;
+    width: 43%;
+    float: right;
+    margin-right: 2%;
+}
