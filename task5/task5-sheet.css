@@ -10,20 +10,21 @@ body{
     margin: 0;
     background-color: #5fc0cd;
     color: white;
-    height: 4rem;
+    height: 7.3rem;
     width: 100%;
+    z-index: 1000;
 }
 .back{
     position: absolute;
     margin:0;
     left: 2.1rem;
-    top: 1.5rem;
+    top: 3rem;
 }
 .pagename{
     text-align: center;
     margin: 0;
-    padding-top: 1.3rem;
-    font-size: 1.7rem;
+    padding-top: 2rem;
+    font-size: 3rem;
 }
 .personal-information{
     background-image: url("task5-bgimgs.png");
@@ -34,32 +35,33 @@ body{
 }
 .head{
     padding-left: 2rem;
-    padding-top: 7rem;
-    padding-bottom: 4rem;
+    padding-top: 13rem;
+    padding-bottom: 7rem;
 }
 .name{
-    font-size: 1.6rem;
+    font-size: 3rem;
     position: absolute;
-    top: 6.5rem;
-    left: 10rem;
+    top: 12rem;
+    left: 19rem;
 }
 .age{
-    font-size: 1.4rem;
+    font-size: 2.3rem;
     position: absolute;
-    top: 7rem;
-    left: 15rem;
+    top: 13.5rem;
+    left: 27rem;
 }
 .adress{
-    font-size: 1.2rem;
+    font-size: 2rem;
     position: absolute;
-    top: 8.5rem;
-    left: 10rem;
+    top: 17rem;
+    left: 19rem;
 }
 .main{
     position: relative;
     margin-bottom: 5rem;
 }
 .skill{
+    font-size: 2.6rem;
     padding-left: 0.8rem;
     margin: 1.5rem 1.3rem ;
     border-left-style: solid;
@@ -68,7 +70,7 @@ body{
 }
 .introduce{
     top: -1rem;
-    font-size: 1.4rem;
+    font-size: 2.6rem;
     border-top: solid 1px #e1e5e7;
     border-bottom: solid 1px #e1e5e7;
 }
@@ -77,24 +79,25 @@ body{
     padding-bottom: 0.8rem;
 }
 .inhome{
-    font-size: 1.4rem;
-    background-image: url("task5-star.png");
+    font-size: 2.6rem;
+    background-image: url("task5-starb.png");
     display: inline-block;
     background-repeat: no-repeat;
-    padding-left: 1.2rem;
+    padding-left: 2rem;
     padding-right: 0.5rem;
-    line-height: 100%;
+    line-height: 85%;
     border-right: solid #e1e5e7 0.5px;
     margin-top: 1rem;
+    margin-left: 1rem;
 }
 .notfood{
     margin-bottom: 1rem;
-    font-size: 1.4rem;
-    background-image: url("task5-star.png");
+    font-size: 2.6rem;
+    background-image: url("task5-starb.png");
     display: inline-block;
     background-repeat: no-repeat;
-    padding-left: 1.2rem;
-    line-height: 100%;
+    padding-left: 1.9rem;
+    line-height: 85%;
 }
 li{
     border-top: solid #e1e5e7 1px;
@@ -104,17 +107,26 @@ li{
 }
 .print {
     padding-left: 0.8rem;
-    padding-right:0.6rem;
+    padding-right:1rem;
+    position: absolute;
+    border-right: solid 1px #e1e5e7;
+    color: #999999;
+}
+.print-p {
+    position: absolute;
+    top: 80.3%;
+    padding-left: 0.8rem;
+    padding-right:1rem;
     position: absolute;
     border-right: solid 1px #e1e5e7;
     color: #999999;
 }
 .ans{
-    margin-left: 7.1rem;
+    margin-left: 12rem;
 }
 .ans-text{
     color: red;
-    margin-left: 7.1rem;
+    margin-left: 12rem;
 }
 ul{
     margin-bottom: 0;
@@ -134,7 +146,7 @@ ul{
 .massage{
     text-align: center;
     display: inline-block;
-    font-size: 1.7rem;
+    font-size: 2.8rem;
     text-decoration: none;
     border: solid #5fc0cd ;
     border-radius: 8px;
@@ -149,10 +161,15 @@ ul{
     text-align: center;
     background-color: #5fc0cd;
     color: white;
-    font-size: 1.7rem;
+    font-size: 2.8rem;
     border: solid #5fc0cd;
     border-radius: 8px;
     width: 43%;
     float: right;
     margin-right: 2%;
 }
+/*@media screen and (max-width: 500px){
+    .massage,.callphone,.introduce,.inhome,.notfood,.skill,.pagename,.name,.age,.adress{
+        font-size: 75%;
+    }
+*/
