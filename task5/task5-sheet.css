@@ -112,9 +112,12 @@ li{
     border-right: solid 1px #e1e5e7;
     color: #999999;
 }
+.point{
+    position: relative;
+}
 .print-p {
     position: absolute;
-    top: 80.3%;
+    top: 20%;
     padding-left: 0.8rem;
     padding-right:1rem;
     position: absolute;
