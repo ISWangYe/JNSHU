@@ -1,0 +1,221 @@
+html{
+    padding: 0;
+    margin: 0;
+    font-size: 62.5%;
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.top{
+    position: fixed;
+    width: 100%;
+    border-bottom: solid 1px #e1e5e7;
+    background-color: white;
+    z-index: 1000;
+}
+.head{
+    height: 6rem;
+    background-color: #5fc0cd;
+    position: relative;
+}
+.h-m{
+    border-radius:8px;
+    font-size: 2rem;
+    width: 39.7%;
+    height: 4rem;
+    background-color: #55a8b3;
+    position: absolute;
+    top: 15.5%;
+    left: 50%;
+    margin-left: -21.85%;
+}
+.find{
+    text-align: center;
+    border-radius:8px;
+    height: 100%;
+    color: #5fc0cd;
+    display: inline-block;
+    float: right;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+}
+.boss{
+    color: white;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+.nurse {
+    margin-top: 10px;
+}
+.worker{
+    text-align: center;
+    border-radius:8px;
+    height: 100%;
+    background-color: white;
+    color: #5fc0cd;
+    display: inline-block;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+}
+.map{
+    position: absolute;
+    float: right;
+    right:1.4rem;
+    top: 18%;
+    width: 3.5rem;
+    height: 3.6rem;
+    background-image: url("task6.png");
+    background-repeat: no-repeat;
+    background-position-x:-94px;
+}
+.lih{
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+select{
+    font-size: 2.3rem;
+    color: #e1e5e7;
+    border: none;
+    /*-webkit-appearance: none;*/
+    /*-webkit-tap-highlight-color: #fff;*/
+    /*outline: 0;*/
+}
+ul {
+    list-style: none;
+    margin-top: 0;
+    padding-left:0;
+}
+li{
+    padding-left: 5rem;
+}
+.min-top{
+    padding-top: 120px;
+}
+.service-time,.dress{
+    font-size: 2.3rem;
+    color: #e1e5e7;
+    position: relative;
+}
+.price{
+    position: relative;
+    display: inline-block;
+    margin-right: 3rem;
+    float: right;
+    color: red;
+    font-size: 2.5rem;
+}
+.time{
+    display: inline-block;
+    font-size: 2.3rem;
+}
+.service-time,.dress,.time{
+    padding-left: 0;
+}
+.service-time,.time,.price{
+    padding-top: 1rem;
+    padding-bottom: 0;
+}
+.dress{
+    padding: 1rem 0 1rem ;
+    padding-left: 3rem;
+    margin-left: -3rem;
+    border-bottom: solid 1px #e1e5e7;
+}
+.riqitu{
+    position: absolute;
+    top:16px;
+    left: -37px;
+    width: 2rem;
+    height: 2rem;
+    background-image: url("task6.png");
+    background-repeat: no-repeat;
+    background-position-x:-94px;
+    background-position-y: -77px;
+}
+.dres{
+    position: absolute;
+    left:1px;
+    width: 2rem;
+    height: 2rem;
+    top: 17px;
+    background-image: url("task6.png");
+    background-repeat: no-repeat;
+    background-position-x:-92px;
+    background-position-y: -101.5px;
+}
+.next{
+    position: absolute;
+    right: -29px;
+    top: 9px;
+    width: 2rem;
+    height: 3rem;
+    background-image: url("task6.png");
+    background-repeat: no-repeat;
+    background-position-x:-92px;
+    background-position-y: -40.5px;
+}
+.footer{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    bottom: 0;
+    background-color: #f8fafb;
+    position: fixed;
+    display: flex;
+}
+.yuan{
+    width: 33.3%;
+    display: flex;
+    justify-content: center;
+}
+.yuan-s{
+    width: 95px;
+    height: 95px;
+    background-image: url("task6.png");
+    background-repeat: no-repeat;
+    background-position-x: 1px;
+    background-position-y: -41px;
+}
+.house{
+    width: 33.3%;
+    display: flex;
+}
+.house-f{
+    color: #5fc0cd;
+    font-size: 1.67rem;
+    margin-top: 58px;
+    margin-bottom:0%;
+    margin-left: 51%;
+}
+.house-p{
+    background: url("task6.png") no-repeat ;
+    width: 46px;
+    height: 40px;
+    margin-left: -38px;
+    margin-top: 19px;
+}
+.user{
+    width: 33.3%;
+    display: flex;
+}
+.user-f{
+    font-size: 1.67rem;
+    margin-top: 58px;
+    margin-bottom:0%;
+    margin-left: 36%;
+}
+.user-p{
+    background: url("task6.png") no-repeat -46px 0px;
+    width: 46px;
+    height: 40px;
+    margin-left: -38px;
+    margin-top: 19px;
+}
