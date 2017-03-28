@@ -1,0 +1,250 @@
+html{
+    margin: 0;
+}
+body{
+    margin: 0;
+    font-size: 62.5%;
+    max-width: 1920px;
+    background-color: #fafafa;
+}
+.head-top{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 5rem;
+}
+@media screen and (max-width: 768px){
+    .head-top{
+        padding: 0.5rem 2rem;
+    }
+}
+.call{
+    color: #29b078;
+    margin: 0;
+}
+.navbar-default{
+    background-color: #29b078;
+    margin-bottom: 0;
+    border: none;
+    border-radius: 0;
+}
+.icon-bar{
+    background-color: white;
+}
+.navbar-default .navbar-nav>li>a{
+    color: white;
+    padding-bottom: 13px;
+    border-bottom:solid 2px #29b078;
+}
+.navbar-default .navbar-nav>li>a:hover{
+    color: white;
+    border-bottom:solid 2px white ;
+}
+@media (min-width: 768px){
+    .navbar-nav {
+        float: right;
+        margin: 0;
+    }
+}
+.glyphicon-menu-left{
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    color: #787b86;
+    font-size: 3rem;
+    text-decoration:none;
+}
+.glyphicon-menu-right{
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    color: #787b86;
+    font-size: 3rem;
+    text-decoration:none;
+}
+.glyphicon-menu-left,.glyphicon-menu-right>a:hover{
+    text-decoration:none;
+    color: #787b86;
+}
+.glyphicon-menu-left,.glyphicon-menu-right>a{
+    color: #787b86;
+    text-decoration:none;
+}
+.col-xs-3{
+    text-align: center;
+}
+.r-b-p{
+    margin: 1rem 1rem 1rem 1rem;
+    display: inline-block;
+}
+.number,.number1{
+    color: #29b078;
+}
+
+.glyphicon-user{
+    right: .5rem;
+}
+.col-md-3,.col-xs-12{
+    margin-top: 2rem;
+}
+.learn{
+    margin: 2rem auto;
+    text-align: center;
+}
+.circle{
+    float: left;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    box-shadow: 0px 3px 6px #eae9ea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+.yuan{
+    width: 100%;
+    height: 100%;
+}
+.int-1{
+    margin: 16px 20px;
+    color: #29b078;
+}
+.int-2{
+    margin: 5px;
+}
+.wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dashed{
+    width: 80%;
+    border-left: dashed 2px grey ;
+    margin-top: 3rem;
+}
+.wrap1{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0px 3px 6px #eae9ea;
+}
+.res{
+    width: 123px;
+}
+.cho-c{
+    display:flex;
+    justify-content:center;
+    margin: 1.5rem 0;
+}
+.circle2:hover{
+    background-color: #29b078;
+}
+.circle2{
+    margin: 0 .5rem;
+    float: left;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    box-shadow: 0px 3px 6px #eae9ea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+.qiye{
+    margin: 0 3%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.qiye-s{
+    border: solid 1px white;
+    padding: 3rem 0;
+    width: 16rem;
+    display: flex;
+    justify-content: center;
+    margin: 2px;
+}
+.qiye-s:hover {
+    border: solid 1px #eae9ea;
+    box-shadow: 0px 3px 6px #eae9ea;
+}
+.lianjie3{
+    background-color: white;
+    margin-top: 3rem;
+}
+.lianjie3 .container>.row{
+    margin-left: -40px;
+}
+.lianjie1{
+    display: flex;
+    justify-content: space-between;
+    color: #999;
+}
+.lianjie{
+    padding: 2rem 0;
+    text-align: center;
+}
+.lianjie1>li>a{
+    color: #999;
+    text-decoration:none;
+}
+.lianjie1>li>a:hover{
+    text-decoration: none;
+}
+
+.lianjie1>li{
+    border-bottom: solid 2px white;
+}
+.lianjie1>li:hover{
+    border-bottom: solid 2px #29b078;
+}
+.foot{
+    background-color: #29b078;
+}
+.foot-t{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2rem 7%;
+    color: white;
+}
+.change>.foot-t-a{
+    margin-top: 4.5rem;
+}
+.foot-t-a-a{
+    margin: 1.5rem 0;
+}
+.foot-t-a>a{
+    color: white;
+    text-decoration: none;
+}
+.foot-t-a-a>a{
+    color: white;
+    text-decoration: none;
+    border-bottom: solid 1px #29b078;
+}
+.foot-t-a-a>a:hover{
+    border-bottom: solid 1px white;
+}
+.foot-t-a-c{
+    margin:.5rem;
+    padding: 0 .5rem;
+    border-left: solid 1px white;
+    border-right: solid 1px white;
+}
+.us{
+    width: 40%;
+}
+.foot-t-y{
+    margin-right:.5rem;
+}
+.foot-b{
+    text-align: center;
+    color: white;
+    padding: .5rem;
+    border-top: solid 1px white;
+}
