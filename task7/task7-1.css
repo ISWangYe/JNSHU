@@ -1,0 +1,123 @@
+.html{
+    padding: 0;
+    margin: 0;
+    font-size: 62.5%;
+}
+body{
+    padding: 0;
+    margin: 6rem auto;
+    background-color: #f0f0f0;
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+}
+.head{
+    width: 100%;
+    max-width: 500px;
+    height: 4.3rem;
+    background-color: #29bde0;
+    padding-left: 1.8rem;
+    padding-top: 1.3rem;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+
+}
+.glyphicon{
+    color: white;
+    font-size: 200%;
+}
+.his{
+    margin: 2.25rem 3rem;
+    border: solid 1px #c9c9c9;
+    font-size: 2.91rem;
+    justify-content:center;
+    align-items:center;
+    display:flex;
+    position: relative;
+    background-color: white;
+}
+.guss{
+    margin: 3rem;
+    color: #9a9a9a;
+}
+.his-con{
+    background: url("task7.png") no-repeat -59px -132px;
+    width: 2rem;
+    height: 3.3rem;
+    display: inline-block;
+    position: absolute;
+    right: 13px;
+}
+.min{
+    margin: 2.25rem 3rem;
+    border: solid 1px #c9c9c9;
+    background-color: white;
+}
+.gh-game{
+    font-size: 3rem;
+    color: #fbb435;
+    border-bottom: solid 1px #fbb435;
+    justify-content:center;
+    align-items:center;
+    display:flex;
+    padding-top: 1rem;
+}
+ul{
+    padding: 0px;
+}
+li{
+    list-style: none;
+}
+.cho-s{
+    background-color: #69d1e9;
+    padding: 2rem 1rem;
+    margin: 1rem 2rem;
+    text-align: center;
+    font-size: 2.6rem;
+    color: white;
+}
+.people{
+    text-align: center;
+}
+.p-p{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+.circle{
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #f0f0f0;
+    margin: 2px;
+}
+.circle:hover{
+    background-color: #69d1e9;
+}
+.cho-c{
+    display:flex;
+    justify-content:center;
+}
+.next {
+    position: absolute;
+    top: 61%;
+    right: 5.2rem;
+}
+.glyphicon-triangle-right{
+    color: #fbb435;
+    position: absolute;
+}
+@media screen and (max-width: 436px){
+    .guss,.gh-game,.cho-s{
+        font-size: 2rem;
+    }
+    .next{
+        top: 59%;
+    }
+}
+@media screen and (max-width: 370px){
+    .guss,.gh-game,.cho-s{
+        font-size: 1.5rem;
+    }
+}

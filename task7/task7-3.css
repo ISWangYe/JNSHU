@@ -1,0 +1,94 @@
+.html{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #29bde0;
+}
+body{
+    padding: 0;
+    margin: 0 auto;
+    font-size: 62.5%;
+    max-width: 500px;
+    width: 100%;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #29bde0;
+    color: white;
+    font-size: 2rem;
+    padding: 1rem;
+    border-bottom: solid 1px #74d4eb;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 500px;
+}
+.glyphicon-home{
+    color: white;
+}
+.main{
+    margin-top: 0px;
+    background-color: #29bde0;
+    display: flex;
+    align-items: center;
+    padding: 6rem 2rem 3rem 2rem;
+}
+.vic-tu{
+    height: 80%;
+    width: 100%;
+}
+.con{
+    font-size: 2rem;
+    color: #ffc865;
+}
+.sta{
+    color: white;
+    margin-top: 2vw;
+    font-size: 2rem;
+}
+.his{
+    padding: 2rem;
+    border-bottom:solid 1px #ddd;
+}
+.his-top{
+    display: flex;
+    justify-content: space-between;
+}
+.his-day{
+    font-size: 1rem;
+    padding-bottom: 1vw;
+}
+.his-time,.his-inf{
+    color: #a6a6a6;
+}
+.foot{
+    width: 100%;
+    max-width: 500px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    background:rgba(41,189,224,0.5);
+    padding: 2vw 0;
+}
+.again,.share{
+    width: 42%;
+    text-align: center;
+}
+.btn-info{
+    width: 100%;
+    font-size: 2rem;
+}
+.again{
+    margin-left: 2rem;
+}
+.share{
+    margin-right: 2rem;
+}
+@media screen and (max-width: 350px){
+    .btn-info{
+        font-size: 1rem;
+    }
+
+}

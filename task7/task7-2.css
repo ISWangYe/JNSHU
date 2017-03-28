@@ -1,0 +1,157 @@
+.html{
+    padding: 0;
+    margin: 0;
+    font-size: 62.5%;
+    width: 100%;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+.wap{
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    height: 100vh;
+    background-color: #29bde0;
+}
+
+.head{
+    width: 100%;
+    padding: 1.3rem 1.8rem 0.3rem 1.8rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #29bde0;
+}
+.glyphicon-menu-hamburger:before{
+    color: white;
+    border: 2px solid white;
+    font-size: 1.5rem;
+}
+.cho{
+    font-size: 2rem;
+    color: white;
+}
+.glyphicon-remove:before{
+    color: white;
+    font-size: 2rem;
+}
+.top{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
+    max-width: 500px;
+}
+.vote{
+    background-color: #b9e9f5;
+    font-size: 2.3rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    height: 5rem;
+}
+.tu{
+    width: 3rem;
+    height: 3rem;
+}
+.vute-p{
+    margin: 4px;
+}
+.tips{
+    height: 5rem;
+    padding: 2rem 10%;
+    color: white;
+    font-size: 2rem;
+    position: relative;
+    background-color: #29bde0;
+}
+.glyphicon-triangle-bottom{
+    color: #b9e9f5;
+    position: absolute;
+    top: -6px;
+    left: 43px;
+}
+.row{
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.container{
+    width: 100%;
+    margin-top: 12rem;
+    padding: 3rem 0;
+
+}
+.col-xs-4{
+    width: 28%;
+    margin-bottom: 1rem;
+}
+.people{
+    font-size: 2.5rem;
+    background-color: #f5c97b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12%;
+}
+.number1,.number2,.number3{
+    font-size: 1.9rem;
+    background-color: #83b09a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kill{
+    background: url("task7.png") no-repeat -54px -85px;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.wap-a{
+    border: solid 5px white;
+    padding: 0;
+}
+
+.img-a{
+    padding-top: 1rem;
+    width: 100%;
+    opacity: 0;
+}
+.col-xs-4:hover .img-a{
+    opacity: 1;
+}
+.foot {
+    width: 100%;
+    max-width: 500px;
+    padding: 3%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #29bde0;
+}
+.btn-info{
+    background-color: #fbb435;
+    width: 70%;
+    font-size: 3vw;
+}
+@media screen and (max-width: 380px){
+    .vote{
+        font-size: 1.8rem;
+    }
+    .vute-p{
+        margin: 9px;
+    }
+    .tips{
+        font-size: 1.3rem;
+        height: 3rem;
+    }
+    .people{
+        font-size: 1.5rem;
+    }
+    .number1{
+        font-size: 1.3rem;
+    }
+}
