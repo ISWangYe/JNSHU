@@ -1,0 +1,104 @@
+html {
+  font-size: 62.5%; }
+
+body {
+  margin: 0; }
+
+.header {
+  position: fixed;
+  top: 0;
+  background-color: #5fc0cd;
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+  z-index: 1000; }
+  .header p {
+    margin: 0;
+    font-size: 2rem;
+    color: white; }
+  .header a {
+    float: left;
+    margin-top: .4rem; }
+
+.header1 {
+  color: white;
+  font-size: 2rem;
+  padding: 1rem; }
+  .header1 p {
+    margin: 0; }
+
+.personal-information {
+  background: url("task5-bgimgs.png") no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 5rem 2rem; }
+  .personal-information .age {
+    margin-left: 2rem;
+    position: relative;
+    font-size: 1.6rem;
+    color: white; }
+    .personal-information .age p {
+      margin: 0; }
+    .personal-information .age .age-1 {
+      position: absolute;
+      top: 0;
+      right: 1rem; }
+    .personal-information .age .dress {
+      margin-top: 1rem; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20rem; }
+  ul li {
+    display: flex;
+    padding: 1rem  1rem;
+    margin-left: 1rem;
+    border-bottom: solid 1px #e1e5e7; }
+    ul li .print {
+      margin-right: 1rem;
+      color: #e1e5e7; }
+    ul li .ans {
+      padding-left: 1rem;
+      border-left: solid 1px #e1e5e7; }
+  ul .skill {
+    margin-left: 0;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: solid 1px #e1e5e7; }
+    ul .skill h3 {
+      margin: 0;
+      padding-left: 1rem;
+      border-left: solid 2px #5fc0cd; }
+  ul .con {
+    display: flex;
+    padding: 1rem  1rem;
+    margin-left: 1rem;
+    border-bottom: solid 1px #e1e5e7; }
+    ul .con .inhome, ul .con .notfood {
+      margin-right: 1rem; }
+      ul .con .inhome img, ul .con .notfood img {
+        margin-right: .5rem; }
+
+.footer {
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+  width: 100%;
+  background-color: white; }
+  .footer button {
+    width: 40%;
+    margin: 3%;
+    height: 4rem;
+    border: solid 2px #5fc0cd;
+    border-radius: 5px;
+    background-color: white;
+    color: #5fc0cd; }
+    .footer button:hover {
+      background-color: #5fc0cd;
+      color: white; }
+
+/*# sourceMappingURL=12-1.css.map */

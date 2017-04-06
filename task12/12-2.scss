@@ -1,0 +1,154 @@
+html {
+  font-size: 62.5%; }
+body {
+  margin: 0; }
+$color: #999;
+$border: solid 1px $color;
+$font-sze: 2rem;
+.top{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  .head{
+    background-color: #5fc0cd;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    a{
+      position: absolute;
+      right: 1rem;
+      top: 1.3rem;
+      width: 3.5rem;
+      height: 3.6rem;
+      background: url("task6.png") no-repeat -94px 0;
+      float: right;
+    }
+    .h-m{
+      display:flex;
+      background-color: #55a8b3;
+      border-radius: 5px;
+      .find,.worker{
+        font-size: $font-sze;
+        color: white;
+        padding: 1rem;
+      }
+      .worker{
+        border-radius: 5px;
+        background-color: white;
+        color: #5fc0cd;
+      }
+    }
+  }
+  .lih{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 1rem;
+    border-bottom: $border;
+    .bor{
+      border-left: $border;
+      border-right: $border;
+    }
+    select{
+      width: 32%;
+      padding-left: 11%;
+      border: none;
+      font-size: $font-sze;
+      color: $color;
+      outline: none;
+    }
+  }
+}
+.min{
+  margin: 11rem 0;
+
+  .lan{
+    border-bottom: $border;
+  }
+  .date{
+    font-size: $font-sze;
+    color: $color;
+    display: flex;
+    align-items: center;
+     .riqitu{
+       background: url("task6.png") no-repeat -94px -77px;
+       width: 2rem;
+       height: 2rem;
+       margin: 1rem;
+     }
+    .riqitu-1{
+      background: url("task6.png") no-repeat -92px -101.5px;
+      width: 2rem;
+      height: 2rem;
+      margin: 1rem;
+    }
+  }
+  .date-1{
+    font-size: $font-sze;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 4rem;
+    .date-2{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .price{
+      display: flex;
+      align-items: center;
+      color: red;
+      white-space: nowrap;
+      overflow: hidden;
+      .next{
+        background: url("task6.png") no-repeat -92px -40.5px;
+        width: 2rem;
+        height: 3rem;
+        margin: 0 1rem;
+      }
+    }
+  }
+}
+.footer{
+  background-color: #f8fafb;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  .yuan{
+    background: url("task6.png") no-repeat 1px -41px;
+    width: 95px;
+    height: 95px;
+    margin: 0 15%;
+  }
+  .house{
+    text-align: center;
+    p{
+      margin: 0;
+      color: #5fc0cd;
+    }
+    .house-p{
+      background: url("task6.png") no-repeat ;
+      width:46px;
+      height: 40px;
+    }
+  }
+  .user{
+    text-align: center;
+    p{
+      margin: 0;
+    }
+    .user-p{
+      background: url("task6.png") no-repeat -46px 0;
+      width: 46px;
+      height: 40px;
+    }
+  }
+
+}
+//@media screen and (max-width: 410px){
+//  $font-size: 1rem;
+//}

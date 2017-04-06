@@ -1,0 +1,123 @@
+html{
+  font-size: 62.5%;
+}
+body{
+  margin: 0;
+}
+$color:#5fc0cd;
+$font-sze: 2rem;
+$border-bottom: solid 1px #e1e5e7;
+.header{
+  position: fixed;
+  top: 0;
+  background-color: $color;
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+  z-index: 1000;
+  p{
+    margin: 0;
+    font-size: $font-sze;
+    color: white;
+  }
+  a{
+    float: left;
+    margin-top: .4rem;
+  }
+}
+.header1{
+  color: white;
+  font-size: $font-sze;
+  padding: 1rem;
+  p{
+    margin: 0;
+  }
+}
+.personal-information{
+  background: url("task5-bgimgs.png") no-repeat ;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 5rem 2rem;
+  .age{
+    margin-left: 2rem;
+    position: relative;
+    font-size: $font-sze*0.8;
+    color: white;
+    p{
+      margin: 0;
+    }
+    .age-1{
+      position: absolute;
+      top: 0;
+      right: 1rem;
+    }
+    .dress{
+      margin-top: 1rem;
+    }
+  }
+}
+ul{
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20rem;
+  li{
+    display: flex;
+    padding: 1rem  1rem;
+    margin-left: 1rem;
+    border-bottom: $border-bottom;
+    .print{
+      margin-right: 1rem;
+      color: #e1e5e7;
+    }
+    .ans{
+      padding-left: 1rem;
+      border-left: $border-bottom;
+    }
+  }
+  .skill{
+    margin-left: 0;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: $border-bottom;
+    h3{
+      margin: 0;
+      padding-left: 1rem;
+      border-left: solid 2px $color;
+    }
+  }
+  .con{
+    display: flex;
+    padding: 1rem  1rem;
+    margin-left: 1rem;
+    border-bottom: $border-bottom;
+    .inhome,.notfood{
+      margin-right: 1rem;
+      img{
+        margin-right: .5rem;
+      }
+    }
+  }
+}
+.footer{
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  button{
+    width: 40%;
+    margin: 3%;
+    height: 4rem;
+    border: solid 2px $color;
+    border-radius: 5px;
+    background-color: white;
+    color: $color;
+    &:hover{
+      background-color: $color;
+      color: white;
+    }
+  }
+}

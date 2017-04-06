@@ -1,0 +1,126 @@
+html {
+  font-size: 62.5%; }
+
+body {
+  margin: 0; }
+
+.top {
+  position: fixed;
+  top: 0;
+  width: 100%; }
+  .top .head {
+    background-color: #5fc0cd;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    position: relative; }
+    .top .head a {
+      position: absolute;
+      right: 1rem;
+      top: 1.3rem;
+      width: 3.5rem;
+      height: 3.6rem;
+      background: url("task6.png") no-repeat -94px 0;
+      float: right; }
+    .top .head .h-m {
+      display: flex;
+      background-color: #55a8b3;
+      border-radius: 5px; }
+      .top .head .h-m .find, .top .head .h-m .worker {
+        font-size: 2rem;
+        color: white;
+        padding: 1rem; }
+      .top .head .h-m .worker {
+        border-radius: 5px;
+        background-color: white;
+        color: #5fc0cd; }
+  .top .lih {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 1rem;
+    border-bottom: solid 1px #999; }
+    .top .lih .bor {
+      border-left: solid 1px #999;
+      border-right: solid 1px #999; }
+    .top .lih select {
+      width: 32%;
+      padding-left: 11%;
+      border: none;
+      font-size: 2rem;
+      color: #999;
+      outline: none; }
+
+.min {
+  margin: 11rem 0; }
+  .min .lan {
+    border-bottom: solid 1px #999; }
+  .min .date {
+    font-size: 2rem;
+    color: #999;
+    display: flex;
+    align-items: center; }
+    .min .date .riqitu {
+      background: url("task6.png") no-repeat -94px -77px;
+      width: 2rem;
+      height: 2rem;
+      margin: 1rem; }
+    .min .date .riqitu-1 {
+      background: url("task6.png") no-repeat -92px -101.5px;
+      width: 2rem;
+      height: 2rem;
+      margin: 1rem; }
+  .min .date-1 {
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 4rem; }
+    .min .date-1 .date-2 {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    .min .date-1 .price {
+      display: flex;
+      align-items: center;
+      color: red;
+      white-space: nowrap;
+      overflow: hidden; }
+      .min .date-1 .price .next {
+        background: url("task6.png") no-repeat -92px -40.5px;
+        width: 2rem;
+        height: 3rem;
+        margin: 0 1rem; }
+
+.footer {
+  background-color: #f8fafb;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+  .footer .yuan {
+    background: url("task6.png") no-repeat 1px -41px;
+    width: 95px;
+    height: 95px;
+    margin: 0 15%; }
+  .footer .house {
+    text-align: center; }
+    .footer .house p {
+      margin: 0;
+      color: #5fc0cd; }
+    .footer .house .house-p {
+      background: url("task6.png") no-repeat;
+      width: 46px;
+      height: 40px; }
+  .footer .user {
+    text-align: center; }
+    .footer .user p {
+      margin: 0; }
+    .footer .user .user-p {
+      background: url("task6.png") no-repeat -46px 0;
+      width: 46px;
+      height: 40px; }
+
+/*# sourceMappingURL=12-2.css.map */
