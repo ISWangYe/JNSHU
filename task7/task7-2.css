@@ -38,7 +38,7 @@ body{
 }
 .top{
     position: fixed;
-    top: 0px;
+    top: 0;
     width: 100%;
     z-index: 1000;
     max-width: 500px;
@@ -73,7 +73,7 @@ body{
     left: 43px;
 }
 .row{
-    margin: 0px;
+    margin: 0;
     width: 100%;
     display: flex;
     justify-content: space-around;

@@ -1,0 +1,102 @@
+html {
+  font-size: 62.5%; }
+
+body {
+  max-width: 500px;
+  margin: 0 auto; }
+
+.header {
+  background-color: #29bde0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; }
+
+.footer {
+  background-color: #29bde0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000; }
+
+.header {
+  max-width: 500px; }
+  .header .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .header .header-top img {
+      width: 2rem;
+      margin: .5rem; }
+    .header .header-top p {
+      color: white;
+      font-size: 2rem;
+      margin: 0; }
+  .header .header-btm {
+    background-color: #b9e9f5; }
+    .header .header-btm .header-btm-mus {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .header .header-btm .header-btm-mus p {
+        color: #000;
+        font-size: 2rem;
+        margin: 0 0 0 .5rem; }
+      .header .header-btm .header-btm-mus img {
+        width: 2rem;
+        margin: 0.5rem; }
+    .header .header-btm .header-btm-san {
+      background-color: #29bde0; }
+      .header .header-btm .header-btm-san p {
+        color: #fff;
+        font-size: 1.5rem;
+        margin: 0 0 0 3rem; }
+      .header .header-btm .header-btm-san img {
+        margin-left: 3rem; }
+
+.min {
+  background-color: #29bde0;
+  max-width: 500px;
+  padding: 13rem 2rem; }
+  .min .con {
+    display: flex;
+    justify-content: space-between; }
+  .min .wrap {
+    width: 28%; }
+    .min .wrap:hover img {
+      opacity: 1; }
+    .min .wrap img {
+      width: 100%;
+      margin-top: 1rem;
+      opacity: 0; }
+    .min .wrap .idc {
+      border: solid 2px white; }
+      .min .wrap .idc .people {
+        background-color: #f5c97b;
+        color: #000;
+        font-size: 2rem;
+        text-align: center;
+        padding: 19%; }
+      .min .wrap .idc .number {
+        background-color: #83b09a;
+        color: #000;
+        font-size: 1.5rem;
+        text-align: center; }
+
+.footer {
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: solid 2px white; }
+  .footer button {
+    margin: 1rem 0;
+    width: 50%;
+    background-color: #fbb435;
+    border-top: solid 2px white; }
+  .footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem; }
+
+/*# sourceMappingURL=task13-2.css.map */

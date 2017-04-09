@@ -1,0 +1,107 @@
+html {
+  font-size: 62.5%; }
+body {
+  max-width: 500px;
+  margin: 0 auto;}
+@mixin font($color,$size){//设置字体参数
+  color: $color;
+  font-size: $size;
+}
+$border: solid 2px white;
+@import "header";//引入头部组件
+@import "footer";//引入底部组件
+.header{
+  max-width: 500px;
+  .header-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img{
+      width: 2rem;
+      margin: .5rem;
+    }
+    p{
+      @include font(white,2rem);
+      margin: 0;
+    }
+  }
+  .header-btm{
+    background-color: #b9e9f5;
+    .header-btm-mus{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      p{
+        @include font(#000,2rem);
+        margin:0 0 0 .5rem;
+      }
+      img{
+        width: 2rem;
+        margin: 0.5rem;
+      }
+    }
+    .header-btm-san{
+      background-color: #29bde0;
+      p{
+        @include font(#fff,1.5rem);
+        margin:0 0 0 3rem;
+      }
+      img{
+        margin-left: 3rem;
+      }
+    }
+  }
+}
+.min{
+  background-color: #29bde0;
+  max-width: 500px;
+  padding: 13rem 2rem;
+  .con{
+    display: flex;
+    justify-content: space-between;
+  }
+  .wrap{
+    width: 28%;
+    &:hover{
+      img{
+        opacity: 1;
+      }
+    }
+    img{
+      width: 100%;
+      margin-top: 1rem;
+      opacity: 0;
+    }
+    .idc{
+      border: $border;
+      .people{
+        background-color: #f5c97b;
+        @include font(#000,2rem);
+        text-align: center;
+        padding: 19%;
+      }
+      .number{
+        background-color: #83b09a;
+        @include font(#000,1.5rem);
+        text-align: center;
+      }
+    }
+  }
+}
+.footer{
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: $border;
+  button{
+    margin: 1rem 0;
+    width: 50%;
+    background-color: #fbb435;
+    border-top: $border;
+  }
+  a{
+    text-decoration: none;
+    @include font(white,2rem)
+  }
+}

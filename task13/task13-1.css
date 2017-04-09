@@ -1,0 +1,70 @@
+html {
+  font-size: 62.5%; }
+
+body {
+  max-width: 500px;
+  background-color: #f0f0f0;
+  margin: 0 auto; }
+
+.header {
+  background-color: #29bde0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; }
+
+.header {
+  max-width: 500px; }
+  .header img {
+    margin: .5rem;
+    max-width: 5%; }
+
+.his {
+  margin: 6rem 2rem 3rem 2rem;
+  text-align: center;
+  background-color: white;
+  border: solid 1px #c9c9c9;
+  position: relative; }
+  .his p {
+    color: #9a9a9a;
+    font-size: 2rem; }
+  .his a {
+    position: absolute;
+    top: 23%;
+    right: 9px; }
+
+.min {
+  margin: 0 2rem;
+  background-color: white;
+  border: solid 1px #c9c9c9;
+  position: relative;
+  text-align: center; }
+  .min a {
+    position: absolute;
+    top: 47%;
+    right: 9px; }
+  .min .min-gh {
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    color: #fbb435;
+    font-size: 2rem;
+    border-bottom: solid 2px #fbb435; }
+  .min .min-edi {
+    padding: 2rem 0;
+    color: white;
+    font-size: 1.8rem;
+    background-color: #5fc0cd;
+    margin: 0 4rem; }
+  .min .cir {
+    display: flex;
+    justify-content: center; }
+    .min .cir .circle {
+      border-radius: 50%;
+      width: 10px;
+      height: 10px;
+      background-color: #f0f0f0;
+      margin: 2px; }
+      .min .cir .circle:hover {
+        background-color: #69d1e9; }
+
+/*# sourceMappingURL=task13-1.css.map */
