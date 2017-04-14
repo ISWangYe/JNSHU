@@ -1,0 +1,38 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #29b078;
+  padding: 1rem; }
+  .footer p, .footer a {
+    color: white;
+    font-size: .8rem; }
+  .footer a {
+    text-decoration: none; }
+    .footer a:hover {
+      border-bottom: solid 1px white; }
+  .footer .footer-us .shuxian {
+    padding: 0 .5rem;
+    border-right: solid 1px white;
+    border-left: solid 1px white; }
+  .footer .footer-us p {
+    margin-bottom: 3.5rem; }
+  .footer .footer-us a {
+    border-bottom: none; }
+  .footer .footer-next {
+    margin-right: 20%; }
+  .footer .footer-next-a {
+    width: 10rem; }
+    .footer .footer-next-a a {
+      padding-top: 1rem;
+      display: inline-block; }
+
+@media screen and (max-width: 600px) {
+  .footer {
+    display: block;
+    text-align: center; }
+    .footer .footer-next {
+      margin: 0; }
+      .footer .footer-next .footer-next-a {
+        width: auto; } }
+
+/*# sourceMappingURL=footer.css.map */

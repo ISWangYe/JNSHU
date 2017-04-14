@@ -1,0 +1,124 @@
+body {
+  background-color: #fafafa;
+  font-size: 62.5; }
+
+.main {
+  padding: 2rem 1rem;
+  text-align: center;
+  overflow: hidden; }
+  .main p {
+    font-size: .8rem; }
+  .main .main-adv, .main .main-adv-data {
+    margin: 0 1rem;
+    display: inline-block;
+    vertical-align: top; }
+  @media screen and (min-width: 1200px) {
+    .main .main-adv, .main .main-adv-data {
+      width: 15%; }
+    .main .learn-step {
+      width: 23%;
+      margin: 1rem 0 0 1rem; }
+    .main .min-exa-peo {
+      width: 15%; }
+    .main .lianjie1 {
+      width: 40%; } }
+  @media screen and (max-width: 1235px) {
+    .main .main-adv, .main .main-adv-data {
+      width: 40%;
+      border-left: none; }
+    .main .learn-step {
+      width: 40%;
+      margin: 1rem 0 0 3rem; }
+    .main .min-exa-peo {
+      width: 27%; }
+    .main .lianjie1 {
+      width: 90%; }
+      .main .lianjie1 a {
+        font-size: .8rem; } }
+  @media screen and (max-width: 680px) {
+    .main .main-adv, .main .main-adv-data {
+      width: 90%;
+      border-left: none; }
+    .main .learn-step {
+      width: 90%;
+      margin: 1rem 0 0 1rem; }
+    .main .min-exa-peo {
+      width: 78%; } }
+  .main .main-adv-data {
+    padding-top: 1rem;
+    border-left: dashed 2px grey; }
+  .main .learn {
+    overflow: hidden; }
+    .main .learn .learn-step {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      float: left; }
+      .main .learn .learn-step p {
+        margin: .5rem; }
+      .main .learn .learn-step .cirle {
+        background-color: white;
+        color: #29b078;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        box-shadow: 0 3px 6px #eae9ea;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+      .main .learn .learn-step img {
+        height: 26px; }
+  .main .min-exa {
+    padding: 0 5%;
+    overflow: hidden;
+    text-align: center; }
+    .main .min-exa .min-exa-peo {
+      display: inline-block;
+      background-color: white;
+      box-shadow: 0 3px 6px #eae9ea;
+      margin: 1rem;
+      padding: 1rem; }
+  .main .yuan {
+    display: flex;
+    justify-content: center; }
+    .main .yuan .yuan1 {
+      margin: .5rem;
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+      background-color: white;
+      box-shadow: 0 3px 6px #eae9ea; }
+      .main .yuan .yuan1:hover {
+        background-color: #29b078; }
+  .main .qiye {
+    margin: 0 3%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .main .qiye .qiye-s {
+      border: solid 1px white;
+      padding: 3rem 0;
+      width: 12rem;
+      display: flex;
+      justify-content: center;
+      margin: 2px; }
+      .main .qiye .qiye-s:hover {
+        border: solid 1px #eae9ea;
+        box-shadow: 0 3px 6px #eae9ea; }
+  .main .lianjie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .main .lianjie1 ul {
+    padding: 0 1rem;
+    color: #999;
+    display: flex;
+    justify-content: space-between; }
+  .main .lianjie1 a {
+    text-decoration: none;
+    color: #999; }
+    .main .lianjie1 a:hover {
+      border-bottom: solid 2px #29b078; }
+
+/*# sourceMappingURL=task15-1.css.map */

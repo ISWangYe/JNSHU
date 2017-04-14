@@ -1,0 +1,68 @@
+body {
+  font-size: 62.5%; }
+
+.banner {
+  background-color: #f1a750;
+  display: flex;
+  justify-content: center; }
+  .banner img {
+    width: 90%;
+    height: 100%; }
+
+.navc {
+  margin: .5rem 1rem; }
+  .navc a {
+    text-decoration: none;
+    color: #29b078; }
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 3rem; }
+  .wrap .tudou {
+    width: 70%;
+    border: solid 1px #ededed;
+    box-shadow: 0 3px 6px #eae9ea; }
+    .wrap .tudou p {
+      color: #c3c3c3;
+      margin: 1rem; }
+    .wrap .tudou .tudou-instr {
+      display: flex;
+      border-bottom: solid 1px #ededed;
+      align-items: center;
+      padding: 1rem; }
+  .wrap .tog {
+    text-align: center;
+    width: 15rem;
+    height: 25rem;
+    border: solid 1px #ededed;
+    box-shadow: 0 3px 6px #eae9ea; }
+    .wrap .tog ul {
+      display: inline-block;
+      list-style: circle;
+      color: #fbb435;
+      width: 5rem; }
+      .wrap .tog ul li {
+        width: 5rem;
+        padding: .5rem 0; }
+        .wrap .tog ul li:hover {
+          list-style: disc; }
+    .wrap .tog .tog-name {
+      padding: 1rem;
+      border-bottom: solid 1px gainsboro; }
+    .wrap .tog a {
+      text-decoration: none;
+      color: #29b078; }
+      .wrap .tog a:hover {
+        color: #fbb435; }
+
+@media screen and (max-width: 976px) {
+  .wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .wrap .tog, .wrap .tudou {
+      width: 100%;
+      margin-bottom: 2rem; } }
+
+/*# sourceMappingURL=task15-2.css.map */
