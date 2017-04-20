@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>九宫格</title>
+        <style type="text/css">
+            .box{
+                max-width: 400px;
+                margin: 0 auto;
+                overflow: hidden;
+            }
+            .sbox{
+                background:orange;
+                float:left;
+                padding:15.6% ;
+                margin:1% ;
+                border-radius: 5%;
+            }
+            .btn{
+                margin: 0 auto;
+                max-width: 400px;
+            }
+            button{
+                cursor:pointer;
+            }
+            #begin,#over,#stop{
+                width: 100%;
+                margin-top: .5rem;
+                height: 2rem;
+                color: orange;
+                font-weight: 800;
+                border: solid 2px orange;
+                border-radius: 5px;
+                background-color: white;
+                outline: none;
+            }
+            #begin:active{
+                background-color: orange;
+                color: white;
+            }
+            #over:active{
+                background-color: orange;
+                color: white;
+            }
+            #stop:active{
+                background-color: orange;
+                color: white;
+            }
+        </style>
+    </head>
+<body>
+<div class="box">
+    <div class="sbox"></div>
+    <div class="sbox"></div>
+    <div class="sbox"></div>
+    <div class="sbox"></div>
+    <div class="sbox"></div>
+    <div class="sbox"></div>
+    <div class="sbox"></div>
+    <div class="sbox"></div>
+    <div class="sbox"></div>
+</div>
+<div class="btn">
+    <button type="button" id="begin" onclick="changeColor()">开始闪</button>
+    <button type="button" id="over" onclick="over()">结束闪</button>
+    <button type="button" id="stop" onclick="stop()">暂停</button>
+</div>
+<script type="text/javascript" src="js-1.js"></script>
+</body>
+</html>
