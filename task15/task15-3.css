@@ -31,6 +31,8 @@ body {
   font-size: 1rem;
   font-weight: 800;
   border-bottom: solid 1px #d0d6d9; }
+  .web p {
+    font-size: 1.5rem; }
 
 .wrap {
   display: flex;
@@ -39,12 +41,13 @@ body {
     position: relative;
     border: solid 1px #d0d6d9;
     width: 25rem;
-    margin: 1rem; }
+    margin: 1.4rem;
+    font-size: 1rem; }
     .wrap .wrap-s .ins {
       padding: 2rem;
       position: absolute;
       opacity: 0;
-      height: 85.2%; }
+      height: 87.4%; }
       .wrap .wrap-s .ins .tit {
         text-align: center;
         font-size: 1.5rem;
@@ -59,21 +62,24 @@ body {
       padding: .5rem;
       border: solid 1px #d0d6d9; }
       .wrap .wrap-s .wrap-s-1 p {
-        word-break: break-all; }
+        word-break: break-all;
+        font-size: 1rem; }
     .wrap .wrap-s .wrap-s-2 {
       display: flex; }
       .wrap .wrap-s .wrap-s-2 .wrap-s-2-1 {
         width: 50%;
         border: solid 1px #d0d6d9;
         display: flex;
-        align-items: center; }
+        align-items: center;
+        font-size: 1rem; }
         .wrap .wrap-s .wrap-s-2 .wrap-s-2-1 img {
           margin: 0 .2rem; }
     .wrap .wrap-s .wrap-s-3 {
       display: flex; }
       .wrap .wrap-s .wrap-s-3 .wrap-s-3-1 {
         width: 50%;
-        border: solid 1px #d0d6d9; }
+        border: solid 1px #d0d6d9;
+        font-size: 1rem; }
     .wrap .wrap-s .wrap-s-4 {
       display: flex; }
       .wrap .wrap-s .wrap-s-4 .wrap-s-4-1 {
@@ -81,18 +87,21 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        border: solid 1px #d0d6d9; }
+        border: solid 1px #d0d6d9;
+        font-size: .9rem; }
       .wrap .wrap-s .wrap-s-4 .wrap-s-4-2 {
         border: solid 1px #d0d6d9;
         width: 50%;
         display: flex;
-        flex-direction: column; }
+        flex-direction: column;
+        font-size: .9rem; }
         .wrap .wrap-s .wrap-s-4 .wrap-s-4-2 .wrap-s-4-2-1 {
           display: flex;
           justify-content: space-between;
           border: solid 1px #d0d6d9; }
     .wrap .wrap-s .wrap-s-5 {
-      border: solid 1px #d0d6d9; }
+      border: solid 1px #d0d6d9;
+      font-size: .9rem; }
 
 .red {
   color: red;

@@ -22,10 +22,12 @@ body {
   .wrap .tudou {
     width: 70%;
     border: solid 1px #ededed;
-    box-shadow: 0 3px 6px #eae9ea; }
+    box-shadow: 0 3px 6px #eae9ea;
+    margin-bottom: 5rem; }
     .wrap .tudou p {
       color: #c3c3c3;
-      margin: 1rem; }
+      margin: 1rem;
+      font-size: .8rem; }
     .wrap .tudou .tudou-instr {
       display: flex;
       border-bottom: solid 1px #ededed;
@@ -34,9 +36,10 @@ body {
   .wrap .tog {
     text-align: center;
     width: 15rem;
-    height: 25rem;
+    height: 27rem;
     border: solid 1px #ededed;
-    box-shadow: 0 3px 6px #eae9ea; }
+    box-shadow: 0 3px 6px #eae9ea;
+    font-size: .8rem; }
     .wrap .tog ul {
       display: inline-block;
       list-style: circle;

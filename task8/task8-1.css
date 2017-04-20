@@ -97,7 +97,7 @@ body{
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
-    box-shadow: 0px 3px 6px #eae9ea;
+    box-shadow: 0 3px 6px #eae9ea;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,7 +128,7 @@ body{
     display: flex;
     justify-content: center;
     background-color: white;
-    box-shadow: 0px 3px 6px #eae9ea;
+    box-shadow: 0 3px 6px #eae9ea;
 }
 .res{
     width: 123px;
@@ -147,7 +147,7 @@ body{
     width: 1.5rem;
     height: 1.5rem;
     border-radius: 50%;
-    box-shadow: 0px 3px 6px #eae9ea;
+    box-shadow: 0 3px 6px #eae9ea;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,8 +169,7 @@ body{
     margin: 2px;
 }
 .qiye-s:hover {
-    border: solid 1px #eae9ea;
-    box-shadow: 0px 3px 6px #eae9ea;
+
 }
 .lianjie3{
     background-color: white;
