@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no" >
+    <link rel="stylesheet" type="text/css" href="js-game-4.css">
+    <title>js-game-4</title>
+</head>
+<body>
+<div class="header">
+    <img src="images/Back-_-Icon.png"  alt="">
+    <P>参数设置</P>
+    <img src="images/circled-help.png" alt="">
+</div>
+<div class="main">
+    <div class="main-fenpei">
+        <div class="main-fenpei-left">
+            <div>各</div>
+            <div>找</div>
+            <div>各</div>
+            <div>家</div>
+        </div>
+        <div class="main-fenpei-right">
+            <div class="main-fenpei-right-all" id="allid"></div>
+            <div class="main-fenpei-right-con">
+                <p onclick="allot()">点击设置</p>
+            </div>
+        </div>
+    </div>
+    <div class="groups">
+        <p>杀手词组：</p>
+        <p>平民词组：</p>
+    </div>
+    <div class="peoples">
+        <div class="people-input1">
+            <p>玩家人数</p>
+            <input type="text" max="18" min="4"  id="num1" onblur="getNum1()">
+            <p>人</p>
+        </div>
+        <div class="people-input2">
+            <span class="people-input2-les" onclick="lesNum()"></span>
+            <input type="range"  id="num2" onchange="getNum2()" max="18" min="4" class="people-input2-slider">
+            <span class="people-input2-add" onclick="addNum()"></span>
+        </div>
+    </div>
+    <div class="btn">
+        <button type="button" onclick="next()">去发牌</button>
+    </div>
+</div>
+<script type="text/javascript" src="js-game-4.js"></script>
+</body>
+</html>

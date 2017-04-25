@@ -1,0 +1,161 @@
+.header {
+  background-color: #29bde0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  z-index: 1000;
+  max-width: 500px; }
+  .header p {
+    margin: 0; }
+  .header img {
+    width: 2rem;
+    margin: .5rem; }
+
+html {
+  font-size: 625%; }
+
+body {
+  max-width: 500px;
+  margin: 0 auto; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .header img {
+    width: .3rem;
+    margin: 0.1rem; }
+  .header p {
+    color: white;
+    font-size: 0.2rem; }
+
+.main {
+  width: 100%;
+  background-color: #f0f0f0;
+  padding-top: .5rem; }
+  .main .main-fenpei {
+    display: flex;
+    margin: 0 .18rem;
+    background-color: #fbfbfb; }
+    .main .main-fenpei .main-fenpei-left {
+      width: 20%;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      font-size: .3rem;
+      background-color: white;
+      color: #444;
+      border-right: solid 1px #d9d9d9; }
+    .main .main-fenpei .main-fenpei-right {
+      width: 80%;
+      height: 3rem;
+      font-size: .25rem; }
+      .main .main-fenpei .main-fenpei-right .main-fenpei-right-all {
+        width: 100%;
+        height: 82%;
+        display: flex;
+        flex-wrap: wrap;
+        overflow: auto; }
+        .main .main-fenpei .main-fenpei-right .main-fenpei-right-all .main-fenpei-right-son {
+          width: 50%;
+          display: block;
+          font-size: .2rem;
+          color: #d0d6d9; }
+      .main .main-fenpei .main-fenpei-right .main-fenpei-right-con {
+        display: flex;
+        justify-content: center;
+        border-top: solid 1px #d9d9d9;
+        padding: .1rem 0; }
+        .main .main-fenpei .main-fenpei-right .main-fenpei-right-con p {
+          margin: 0;
+          color: #29bde0;
+          cursor: pointer; }
+  .main .groups {
+    margin: .2rem .18rem;
+    background-color: white;
+    padding-bottom: .1rem; }
+    .main .groups p {
+      font-size: .2rem;
+      margin: 0 .1rem;
+      padding: .1rem 0;
+      border-bottom: solid 1px #d9d9d9;
+      color: #d7d7d7; }
+  .main .peoples {
+    margin: .2rem .18rem;
+    background-color: white;
+    padding-top: .05rem; }
+    .main .peoples p {
+      font-size: .2rem;
+      margin: 0; }
+    .main .peoples .people-input1 {
+      display: flex;
+      align-items: center;
+      margin: .1rem; }
+      .main .peoples .people-input1 input {
+        font-size: .3rem;
+        width: .4rem;
+        height: .25rem;
+        margin: 0 .1rem;
+        background-color: #f0f0f0;
+        border: none;
+        outline: none;
+        color: orange;
+        text-align: center; }
+    .main .peoples .people-input2 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 .1rem;
+      padding-bottom: .1rem; }
+      .main .peoples .people-input2 .people-input2-slider {
+        background: #fbb435;
+        width: 80%;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        height: .05rem;
+        outline: none; }
+      .main .peoples .people-input2 input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: .5rem;
+        height: .3rem;
+        -webkit-box-shadow: 0 0 2px;
+        background: url("images/btn.png");
+        background-size: cover; }
+      .main .peoples .people-input2 span {
+        width: .25rem;
+        height: .25rem;
+        border: solid 1px #d9d9d9; }
+      .main .peoples .people-input2 .people-input2-les {
+        background: url("images/less.png") no-repeat;
+        background-size: 100%;
+        cursor: pointer; }
+      .main .peoples .people-input2 .people-input2-add {
+        background: url("images/add.png") no-repeat;
+        background-size: 100%;
+        cursor: pointer; }
+  .main .btn {
+    position: relative;
+    margin: 0 .2rem;
+    height: .5rem; }
+    .main .btn button {
+      font-size: .2rem;
+      color: white;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      background-color: #fbb435;
+      border: none;
+      outline: none;
+      border-radius: 5px; }
+      .main .btn button:active {
+        background-color: white;
+        color: #fbb435; }
+
+/*# sourceMappingURL=js-game-4.css.map */
