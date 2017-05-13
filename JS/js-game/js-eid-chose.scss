@@ -1,0 +1,67 @@
+html {
+  font-size: 62.5%; }
+body {
+  max-width: 500px;
+  margin: 0 auto;  }
+@mixin font($color,$size){//设置字体参数
+  color: $color;
+  font-size: $size;
+}
+$border: solid 1px #c9c9c9;
+@import "header";//引入头部组件
+.wrap{
+  background-color: #f0f0f0;
+  padding-top: 5rem;
+}
+.his{
+  margin: 1rem 2rem 3rem 2rem;
+  text-align: center;
+  background-color: white;
+  border: $border;
+  position: relative;
+  p{
+    @include font(#9a9a9a,2rem)
+  }
+  a{
+    position: absolute;
+    top: 23%;
+    right: 9px;
+  }
+}
+.min{
+  margin: 0 2rem;
+  background-color: white;
+  border: $border;
+  position: relative;
+  text-align: center;
+  a{position: absolute;
+    top: 47%;
+    right: 9px;
+  }
+  .min-gh{
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    @include font(#fbb435,2rem);
+    border-bottom: solid 2px #fbb435;
+  }
+  .min-edi{
+    padding: 2rem 0;
+    @include font(white,1.8rem);
+    background-color: #5fc0cd;
+    margin: 0 4rem;
+  }
+  .cir{
+    display:flex;
+    justify-content:center;
+    .circle {
+      border-radius: 50%;
+      width: 10px;
+      height: 10px;
+      background-color: #f0f0f0;
+      margin: 2px;
+      &:hover {
+        background-color: #69d1e9;
+      }
+    }
+  }
+}

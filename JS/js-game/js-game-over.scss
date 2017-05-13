@@ -1,0 +1,88 @@
+html {
+  font-size: 62.5%; }
+
+body {
+  max-width: 500px;
+  margin: 0 auto; }
+@mixin font($color,$size){//设置字体参数
+  color: $color;
+  font-size: $size;
+}
+$border: solid 2px white;
+@import "header";//引入头部组件
+@import "footer";//引入底部组件
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1px #74d4eb;
+  p{
+    @include font(white,2rem);
+    margin: 0;
+  }
+}
+.min{
+  .min-result{
+    padding-top: 4rem;
+    background-color: #29bde0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    img{
+      width: 20rem;
+      margin: 0 auto;
+    }
+    #peowin{
+      display: none;
+    }
+    p{
+      @include font(#ffc865,1.5rem);
+      margin: 1rem 3rem;
+    }
+    .data{
+      color: white;
+    }
+  }
+  .min-his{
+    padding: 1rem 3rem;
+    border-bottom: solid 1px #ddd;
+    .min-his-time{
+      display: flex;
+      justify-content: space-between;
+      p{
+        margin: 0;
+      }
+      .day{
+        @include font(#000,1.3rem)
+      }
+      .tim{
+        @include font(#ddd,1rem)
+      }
+    }
+    .min-his-inf{
+      margin-top: 1rem;
+      @include font(#ddd,1rem)
+    }
+  }
+}
+.footer{
+  max-width: 500px;
+  background:rgba(41,189,224,0.5);
+  display: flex;
+  justify-content: space-between;
+  button{
+    padding: 2%;
+    width: 40%;
+    background-color: #fbb435;
+    @include font(white,2rem);
+    border-radius: 5px;
+    margin: 1rem;
+  }
+  .btn1{
+    background-color: #f66f6f;
+    a{
+      text-decoration: none;
+      @include font(white,2rem);
+    }
+  }
+}

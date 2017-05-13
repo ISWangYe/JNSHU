@@ -1,0 +1,175 @@
+@import "header";
+@mixin font($color,$size){//设置字体参数
+  color: $color;
+  font-size: $size;
+}
+$border:solid 1px #d9d9d9;
+html{
+  font-size: 625%;
+}
+body{
+  max-width: 500px;
+  margin: 0 auto;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  img{
+    width: .3rem;
+    margin: 0.1rem;
+  }
+  p{
+    @include font(white,.2rem);
+  }
+}
+.main{
+  width: 100%;
+  background-color: #f0f0f0;
+  padding-top: .5rem;
+  .main-fenpei{
+    display: flex;
+    margin: 0 .18rem;
+    background-color: #fbfbfb;
+    .main-fenpei-left{
+      width: 20%;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      font-size: .3rem;
+      background-color: white;
+      color: #444;
+      border-right: $border;
+    }
+    .main-fenpei-right{
+      width: 80%;
+      height: 3rem;
+      font-size: .25rem;
+      .main-fenpei-right-all{
+        width: 100%;
+        height: 82%;
+        display: flex;
+        flex-wrap: wrap;
+        overflow: auto;
+        .main-fenpei-right-son{
+          width: 50%;
+          display: block;
+          font-size: .2rem;
+          color: #d0d6d9;
+        }
+      }
+      .main-fenpei-right-con{
+        display: flex;
+        justify-content: center;
+        p{
+          margin: 0;
+          color: #29bde0;
+          cursor: pointer;
+        }
+        border-top: $border;
+        padding: .1rem 0;
+      }
+    }
+  }
+  .groups{
+    margin: .2rem .18rem;
+    background-color: white;
+    padding-bottom: .1rem;
+    p{
+      font-size: .2rem;
+      margin: 0 .1rem;
+      padding: .1rem 0;
+      border-bottom: $border;
+      color: #d7d7d7;
+    }
+  }
+  .peoples{
+    margin: .2rem .18rem;
+    background-color: white;
+    padding-top: .05rem;
+    p{
+      font-size: .2rem;
+      margin: 0;
+    }
+    .people-input1{
+      display: flex;
+      align-items: center;
+      margin: .1rem;
+      input{
+        font-size: .3rem;
+        width: .4rem;
+        height: .25rem;
+        margin: 0 .1rem;
+        background-color: #f0f0f0;
+        border: none;
+        outline: none;
+        color: orange;
+        text-align: center;
+      }
+    }
+    .people-input2{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 .1rem;
+      padding-bottom: .1rem;
+      .people-input2-slider{
+        background: #fbb435;
+        width: 80%;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        height: .05rem;
+        outline: none;
+      }
+      input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: .5rem;
+        height: .3rem;
+        -webkit-box-shadow:0 0 2px ;
+        background: url("images/btn.png");
+        background-size: cover;
+      }
+      span{
+        width: .25rem;
+        height: .25rem;
+        border: $border;
+      }
+      .people-input2-les{
+        background: url("images/less.png") no-repeat ;
+        background-size: 100%;
+        cursor: pointer;
+      }
+      .people-input2-add{
+        background: url("images/add.png") no-repeat ;
+        background-size: 100%;
+        cursor: pointer;
+      }
+    }
+  }
+  .btn{
+    position: relative;
+    margin: 0 .2rem;
+    height: .5rem;
+    button{
+      font-size: .2rem;
+      color: white;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      background-color: #fbb435;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      &:active{
+        background-color: white;
+        color: #fbb435;
+      }
+    }
+  }
+}

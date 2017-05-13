@@ -1,0 +1,70 @@
+@import "header";
+html {
+  font-size: 62.5%; }
+body {
+  max-width: 500px;
+  margin: 0 auto;}
+@mixin font($color,$size){//设置字体参数
+  color: $color;
+  font-size: $size;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  p{
+    @include font(white,2rem);
+  }
+}
+.wrap{
+  max-width: 500px;
+  background-color: #f0f0f0;
+  padding-top: 6rem;
+  padding-bottom: .5rem;
+  .wrap-s{
+    border: solid 2px #c9c9c9;
+    width: 95%;
+    margin: 0 auto;
+    background-color: white;
+    .wrap-flow{
+      margin-left: 3rem;
+      border-left: solid 2px #c9c9c9;
+      position: relative;
+      padding: 2rem 0;
+      .night{
+        position: absolute;
+        left: -2.5rem;
+        top: 3.5rem;
+      }
+      .day{
+        position: absolute;
+        left: -2.5rem;
+        top: 18rem;
+      }
+      .wrap-flow-nighthappen{
+        width: 75%;
+        margin:  auto;
+        text-align: center;
+        margin: 2rem auto;
+        padding: 1rem;
+        @include font(white,2rem);
+        background-color: #29bde0;
+        cursor: pointer;
+      }
+      #ghost{
+        margin-top: 4rem;
+      }
+    }
+  }
+  .days{
+    font-weight: 800;
+    @include font(#29bde0,2rem);
+    padding: 1rem;
+    text-align: center;
+    border-bottom: solid 2px #c9c9c9;
+    img{
+      float: right;
+      margin-top: .5rem;
+    }
+  }
+}

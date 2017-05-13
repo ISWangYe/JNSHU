@@ -45,6 +45,8 @@ body {
   .min .min-result img {
     width: 20rem;
     margin: 0 auto; }
+  .min .min-result #peowin {
+    display: none; }
   .min .min-result p {
     color: #ffc865;
     font-size: 1.5rem;
@@ -90,4 +92,4 @@ body {
       color: white;
       font-size: 2rem; }
 
-/*# sourceMappingURL=js-game-3.css.map */
+/*# sourceMappingURL=js-game-over.css.map */

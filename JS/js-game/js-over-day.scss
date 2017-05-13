@@ -1,0 +1,56 @@
+@import "header";
+html {
+  font-size: 62.5%; }
+body {
+  max-width: 500px;
+  margin: 0 auto;}
+@mixin font($color,$size){//设置字体参数
+  color: $color;
+  font-size: $size;
+}
+.header{
+  background-color: #29bde0;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+  border-bottom: solid 1px #74d4eb;
+}
+.wrap{
+  max-width: 500px;
+  background-color: #29bde0;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  .wrap-cry{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+  .wrap-his{
+    text-align: center;
+    margin: 2rem;
+    color: white;
+    font-size: 2.9rem;
+    overflow-x:auto;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .tiaozhuan,.nextday,.killvictory,.peopvictory{
+    cursor: pointer;
+    width: 70%;
+    margin: 1rem auto;
+    color: white;
+    background-color: #fbb435;
+    font-size: 3rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    padding: .5rem;
+  }
+  .nextday,.killvictory,.peopvictory{
+    display: none;
+  }
+}

@@ -3,6 +3,9 @@
  */
 var num1=document.getElementById("num1");
 var num2=document.getElementById("num2");
+function back() {
+    window.location.href="js-edi-chose.html";
+}
 function getNum1() {
     if (num1.value<4||num1.value>18){
         alert("请输入正确的人数范围:4~18");
@@ -41,7 +44,7 @@ function peop() {
         }
     }
     // Group=all;
-}
+ }
 function allot() {
     peop();
     var toscreen="";
@@ -57,6 +60,7 @@ function next() {
         alert("请先设置人数");
     }
     else {
-        window.location.href="www.baidu.com";
+        sessionStorage.setItem("renshu",JSON.stringify(all));
+        window.location.href="js-check-id.html";
     }
 }

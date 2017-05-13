@@ -1,0 +1,64 @@
+.header {
+  background-color: #29bde0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  z-index: 1000;
+  max-width: 500px; }
+  .header p {
+    margin: 0; }
+  .header img {
+    width: 2rem;
+    margin: .5rem; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  max-width: 500px;
+  margin: 0 auto; }
+
+.header {
+  background-color: #29bde0;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+  border-bottom: solid 1px #74d4eb; }
+
+.wrap {
+  max-width: 500px;
+  background-color: #29bde0;
+  padding-top: 3rem;
+  padding-bottom: 1rem; }
+  .wrap .wrap-cry {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem; }
+  .wrap .wrap-his {
+    text-align: center;
+    margin: 2rem;
+    color: white;
+    font-size: 2.9rem;
+    overflow-x: auto;
+    height: 20rem;
+    display: flex;
+    flex-direction: column; }
+  .wrap .tiaozhuan, .wrap .nextday, .wrap .killvictory, .wrap .peopvictory {
+    cursor: pointer;
+    width: 70%;
+    margin: 1rem auto;
+    color: white;
+    background-color: #fbb435;
+    font-size: 3rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    padding: .5rem; }
+  .wrap .nextday, .wrap .killvictory, .wrap .peopvictory {
+    display: none; }
+
+/*# sourceMappingURL=js-over-day.css.map */

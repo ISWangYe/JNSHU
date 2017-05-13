@@ -1,0 +1,99 @@
+html {
+  font-size: 62.5%; }
+body {
+  max-width: 500px;
+  margin: 0 auto;}
+@mixin font($color,$size){//设置字体参数
+  color: $color;
+  font-size: $size;
+}
+$border: solid 2px white;
+@import "header";//引入头部组件
+@import "footer";//引入底部组件
+.header{
+  .header-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px #b9e9f5;
+    }
+    p{
+      @include font(white,2rem);
+      margin: 0;
+    }
+  }
+  .header-btm{
+    background-color: #b9e9f5;
+    .header-btm-mus{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      p{
+        @include font(#000,2rem);
+        margin:0 0 0 .5rem;
+      }
+    }
+    .header-btm-san{
+      background-color: #29bde0;
+      p{
+        @include font(#fff,1.5rem);
+        margin:0 0 0 3rem;
+      }
+      img{
+        margin: 0 3rem .3rem;
+        width: 1rem;
+      }
+    }
+  }
+.min{
+  background-color: #29bde0;
+  max-width: 500px;
+  padding: 8rem 2rem 25rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  .wrap{
+    width: 28%;
+    margin: 1rem;
+    }
+    .idc{
+      border: $border;
+      .people{
+        background-color: #f5c97b;
+        @include font(#000,2rem);
+        text-align: center;
+        padding: 19%;
+        cursor: pointer;
+      }
+      .number{
+        background-color: #83b09a;
+        @include font(#000,1.5rem);
+        text-align: center;
+      }
+    }
+  }
+.footer{
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: $border;
+  button{
+    margin: 1rem 0;
+    width: 50%;
+    background-color: #fbb435;
+    border: none ;
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+  }
+  #killsomebody{
+    display: none;
+  }
+  #vote{
+    display: none;
+  }
+  a{
+    text-decoration: none;
+    @include font(white,2rem)
+  }
+}
