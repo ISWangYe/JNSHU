@@ -4,7 +4,6 @@ var num=[];
 var color=[];
 //为随机数和颜色赋值
 function spccal() {
-    // console.log(sbox.length);
     for(var i=0; i<3; i++){
         num[i]=(Math.floor(Math.random()*9));
         color[i]="#"+Math.floor(Math.random()*0xffffff).toString(16);
