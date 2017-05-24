@@ -3,7 +3,6 @@ html {
 
 body {
   max-width: 500px;
-  background-color: #f0f0f0;
   margin: 0 auto; }
 
 .header {
@@ -13,14 +12,18 @@ body {
   width: 100%;
   z-index: 1000; }
 
+.wrap {
+  background-color: #f0f0f0;
+  padding-top: 5rem; }
+
 .header {
   max-width: 500px; }
   .header img {
-    margin: .5rem;
-    max-width: 5%; }
+    width: 2rem;
+    margin: .5rem; }
 
 .his {
-  margin: 6rem 2rem 3rem 2rem;
+  margin: 1rem 2rem 3rem 2rem;
   text-align: center;
   background-color: white;
   border: solid 1px #c9c9c9;
@@ -67,4 +70,4 @@ body {
       .min .cir .circle:hover {
         background-color: #69d1e9; }
 
-/*# sourceMappingURL=task13-1.css.map */
+/*# sourceMappingURL=js-eid-chose.css.mapp */

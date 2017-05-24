@@ -1,0 +1,68 @@
+$color:#29b078;
+.header{
+  .header-us{
+    padding: .5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p{
+      color: $color;
+      margin: 0;
+    }
+  }
+  .nav{
+    ul{
+      background: url("images/logo.png") no-repeat 1rem;
+      margin: 0;
+      padding: 1rem 0 1rem 1rem;
+      background-color: $color;
+      text-align: right;
+      position: relative;
+      .current{
+        display: none;//隐藏汉堡图标
+      }
+    }
+    li{
+      list-style: none;
+      display: inline-block;//方便对齐
+      a{
+        text-decoration: none;
+        color: white;
+        padding:.8rem 1rem;
+        &:hover{
+          border-bottom: solid 2px white;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px){
+  .header{
+    .nav{
+      ul{
+        padding:.6rem 1rem;
+        &:hover{
+          li{
+            display: block;//显示子项
+            a{
+              display: block;
+              text-align: center;
+            }
+          }
+        }
+        .current{
+          display: block;//显示汉堡图标作为导航栏缩略图
+        }
+        li{
+          display: none;//隐藏多余列表
+        }
+      }
+
+    }
+  }
+}
+@media screen and (max-width: 380px){
+  .header-us p{
+    font-size: .5rem;
+  }
+}

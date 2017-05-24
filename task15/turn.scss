@@ -1,0 +1,32 @@
+.turn{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  .turn-container{
+    width: 500%;
+    transform: translate(0,0);
+    animation: loop 10s linear infinite;
+    img{
+      width: 20%;
+      float: left;
+    }
+  }
+}
+@keyframes loop {
+  0% {transform: translate(0,0);}
+  15% {transform: translate(0,0);}
+
+  20% {transform: translate(-20%,0);}
+  35% {transform: translate(-20%,0);}
+
+  40% {transform: translate(-40%,0);}
+  55% {transform: translate(-40%,0);}
+
+  60% {transform: translate(-60%,0);}
+  75% {transform: translate(-60%,0);}
+
+  80% {transform: translate(-80%,0);}
+  95% {transform: translate(-80%,0);}
+
+  100% {transform: translate(0,0);}
+}

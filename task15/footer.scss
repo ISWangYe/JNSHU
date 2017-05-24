@@ -1,0 +1,51 @@
+.footer{
+  display: flex;
+  justify-content: space-between;
+  background-color: #29b078;
+  padding: 1rem;
+  p,a{
+    color: white;
+    font-size: .8rem;
+  }
+  a{
+    text-decoration: none;
+    &:hover{
+      border-bottom: solid 1px white;
+    }
+  }
+  .footer-us{
+    .shuxian{
+      padding: 0 .5rem;
+      border-right: solid 1px white;
+      border-left: solid 1px white ;
+    }
+    p{
+      margin-bottom: 3.5rem;
+    }
+    a{
+      border-bottom: none;
+    }
+  }
+  .footer-next{
+    margin-right: 20%;
+  }
+  .footer-next-a{
+    width: 10rem;
+    a{
+      padding-top: 1rem;
+      display: inline-block;
+    }
+  }
+}
+@media screen and (max-width: 600px){
+  .footer{
+    display: block;
+    text-align: center;
+    .footer-next{
+      margin: 0;
+      .footer-next-a{
+        width:auto;
+      }
+    }
+  }
+}

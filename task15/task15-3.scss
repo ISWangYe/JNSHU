@@ -1,0 +1,131 @@
+body{
+  font-size: 62.5%;
+}
+$border: solid 1px #d0d6d9;
+.navc{
+  margin: .5rem 1rem;
+  a{
+    text-decoration: none;
+    color: #29b078;
+  }
+}
+.subnav-a{
+  display: flex;
+  align-items: center;
+  margin: 0 1rem;
+  padding: 1rem 0;
+  border-top: $border;
+  border-bottom: $border;
+  p{
+    color: #d0d6d9;
+  }
+  a{
+    text-decoration: none;
+    color: #000;
+    padding: .1rem .5rem;
+    margin: 0 .2rem;
+    &:hover{
+      background-color: #29b078;
+      color: #fff;
+    }
+  }
+}
+.web{
+  margin: 1rem;
+  padding: 1rem 0;
+  font-size: 1rem;
+  font-weight: 800;
+  border-bottom: $border;
+  p{
+    font-size: 1.5rem;
+  }
+}
+.wrap{
+  display: flex;
+  flex-wrap: wrap;
+  .wrap-s{
+    position: relative;
+    border: $border;
+    width: 25rem;
+    margin: 1.4rem;
+    font-size: 1rem;
+    .ins{
+      padding: 2rem;
+      position: absolute;
+      opacity: 0;
+      height: 87.4%;
+      .tit{
+        text-align: center;
+        font-size: 1.5rem;
+        padding-bottom: 3rem;
+      }
+      &:hover{
+        opacity: 1;
+        color: white;
+        background-color: rgba(43,52,36,0.5)
+      }
+    }
+    .wrap-s-1{
+      display: flex;
+      align-items: center;
+      padding: .5rem;
+      border: $border;
+      p{
+        word-break: break-all;
+        font-size: 1rem;
+      }
+    }
+    .wrap-s-2{
+      display: flex;
+      .wrap-s-2-1{
+        width: 50%;
+        border: $border;
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+        img{
+          margin: 0 .2rem;
+        }
+      }
+    }
+    .wrap-s-3{
+      display: flex;
+      .wrap-s-3-1{
+        width: 50%;
+        border: $border;
+        font-size: 1rem;
+      }
+    }
+    .wrap-s-4{
+      display: flex;
+      .wrap-s-4-1{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: $border;
+        font-size: .9rem;
+      }
+      .wrap-s-4-2{
+        border: $border;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        font-size: .9rem;
+        .wrap-s-4-2-1{
+          display: flex;
+          justify-content: space-between;
+          border: $border;
+        }
+      }
+    }
+    .wrap-s-5{
+      border: $border;
+      font-size: .9rem;
+    }
+  }
+}
+.red{
+  color: red;
+  font-weight: 800;
+}
