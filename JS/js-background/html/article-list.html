@@ -1,0 +1,32 @@
+
+
+<div class="table">
+    <table border="1" cellspacing="0" rules="rows" bordercolor="gray">
+        <tbody>
+        <tr>
+            <th>id</th>
+            <th>名称</th>
+            <th>类型</th>
+            <th>发布时间</th>
+            <th>修改时间</th>
+            <th>发布者</th>
+            <th>状态</th>
+            <th>操作</th>
+        </tr>
+        <tr ng-repeat="x in data">
+            <td>{{x.id}}</td>
+            <td>{{x.title}}</td>
+            <td>{{x.type }}</td>
+            <td>{{x.createAt }}</td>
+            <td>{{x.updateAt}}</td>
+            <td>{{x.author}}</td>
+            <td>{{x.status}}</td>
+            <td>
+                <button>上/下线</button>
+                <button>编辑</button>
+                <button>删除</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no" >
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>登陆页</title>
+</head>
+<body>
+<div class="main" ng-app="indexApp" ng-controller="indexCtrl">
+    <p>后台登陆</p>
+    <form action="" name="myForm" novalidate>
+        <div class="username">
+            <img src="images/user.png"><input type="text"  id="name"  name="name" ng-model="name" placeholder="请输入账号" required>
+            <span  ng-show="myForm.name.$dirty && myForm.name.$invalid"></span>
+<span ng-show="myForm.name.$error.required">用户名必填</span>
+        </div>
+        <div class="password">
+            <img src="images/pwd.png"><input type="password"  id="pwd" name="pwd" ng-model="pwd" placeholder="请输入密码" required>
+            <span ng-show="myForm.pwd.$dirty && myForm.pwd.$invalid"></span>
+            <span ng-show="myForm.pwd.$error.required">密码必填</span>
+        </div>
+        <button class="login" type="button" id="send" ng-click="enter()">登 陆</button>
+    </form>
+</div>
+<script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+<script  src="config/jquery-3.2.0.min.js"></script>
+<script  src="js/index.js"></script>
+</body>
+</html>

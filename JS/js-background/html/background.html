@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no" >
+    <link rel="stylesheet" type="text/css" href="../css/background.css ">
+    <script src="../angular-1.4.6/angular.min.js"></script>
+    <script src="https://cdn.bootcss.com/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+    <script src="../js/background.js"></script>
+    <script src="../js/article-list.js"></script>
+    <title>后台</title>
+</head>
+<body ng-app="bgApp">
+<div class="wrap">
+    <div class="wrap-top">
+        <div class="left">
+            后台管理主页
+        </div>
+        <div class="sing-out">退出</div>
+    </div>
+    <div class="min">
+        <div class="all" >
+            <div><a href="#/welcome">后台页</a></div>
+            <div><a href="#/article-list">列表页</a></div>
+            <div><a href="#/article-detail">详情页</a></div>
+        </div>
+        <div  ui-view=""></div>
+    </div>
+</div>
+
+</body>
+</html>

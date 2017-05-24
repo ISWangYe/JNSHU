@@ -1,0 +1,60 @@
+html{
+  font-size: 62.5%;
+}
+body{
+  margin: 0;
+}
+.wrap{
+  .wrap-top{
+    border-bottom: solid 1px #dadace;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .left{
+      width: 13rem;
+      color: white;
+      background-color: grey;
+      font-size: 2.3rem;
+      padding: .5rem .9rem;
+    }
+    .sing-out{
+      margin: 0 1rem;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+  }
+  .min{
+    display: flex;
+    .all{
+      width: 17rem;
+      background-color: grey;
+      border-right: solid 1px #dadace;
+      a{
+        color: white;
+        text-decoration: none;
+      }
+      div{
+        text-align: center;
+        color: white;
+        font-size: 2rem;
+        margin: 1rem auto;
+      }
+    }
+    .view-place{
+      width: 70%;
+    }
+  }
+}
+div.ng-scope{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.table{
+  text-align: center;
+  font-size: 1.5rem;
+  width: 100%;
+  table{
+    width: 100%;
+  }
+}

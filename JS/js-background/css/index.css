@@ -1,0 +1,43 @@
+html {
+  font-size: 62.5%; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url("../images/bg.jpg") no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.main {
+  margin: 14%;
+  background-color: rgba(208, 212, 218, 0.5); }
+  .main p {
+    text-align: center;
+    color: #03a9f4;
+    font-size: 3rem; }
+  .main .username, .main .password {
+    background-color: white;
+    margin: 1rem 2rem;
+    width: 30rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem; }
+    .main .username input, .main .password input {
+      border: none;
+      width: 20rem;
+      outline: medium; }
+  .main button {
+    height: 3rem;
+    width: 32rem;
+    margin: 2rem;
+    background-color: #03a9f4;
+    color: white;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer; }
+
+/*# sourceMappingURL=index.css.map */
