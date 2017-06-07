@@ -1,10 +1,93 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
- 哈哈哈哈哈哈哈
-</body>
-</html>
+<div class="add-wap">
+    <div class="container ">
+        <div class="row" style="background-color: #e4e4e4;color: #1e88e5;margin: 0">
+            <div class="col-xs-12">新增Article</div>
+        </div>
+        <form name="addForm">
+            <div class="row">
+                <div class="col-sm-2"><span class="star">* </span>名称:</div>
+                <div class="col-sm-10">
+                    <input type="text" ng-model="detailParams.title" name="title" maxlength="20"  required>
+                    <span class="star" ng-messages="addForm.title.$error" ng-if="addForm.title.$touched">
+                        <span ng-message="required">名称是必须的</span>
+                        <span ng-message="maxlength">名称的最大长度为20</span>
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2"><span class="star">* </span>类型：</div>
+                <div class="col-sm-10">
+                    <select name="typename"   ng-model="detailParams.type" ng-options="x.id as x.text for x in type" required>
+                        <option value="">类型</option>
+                    </select>
+                    <span class="star" ng-messages="addForm.typename.$error" ng-if="addForm.type.$touched">
+                        <span ng-message="required">这是必选项</span>
+                    </span>
+                </div>
+            </div>
+            <div class="row" ng-if="detailParams.type == 3">
+                <div class="col-sm-2"><span class="star">* </span>行业：</div>
+                <div class="col-sm-10">
+                    <select name="hangye" ng-model="detailParams.industry" ng-options="x.id as x.text for x in hangye" required>
+                        <option value="">行业</option>
+                    </select>
+                    <span class="star"  ng-if="addForm.hangye.$touched&&addForm.hangye.$invalid">这是必选项</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <span class="star">* </span>链接：
+                </div>
+                <div class="col-sm-10">
+                    <input type="text" ng-model="detailParams.url" name="url" ng-maxlength="100"  required>
+                    <span class="star" ng-messages="addForm.url.$error" ng-if="addForm.url.$touched">
+                        <span ng-message="required">链接是必须的</span>
+                        <span ng-message="maxlength">url长度最大为100</span>
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12"><span class="star" style="color: red">* </span>说明：</div>
+                <div class="col-sm-12">
+                    <div ng-model="detailParams.content" contenteditable="true"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12"><span class="star" style="color: white">* </span>配图上传:</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2"><span class="star" style="color: white">* </span>请上传图片</div>
+                <div class="col-sm-10">
+                    <input type="file" name="img" ng-file-select="onFileSelect($files)" multiple required>
+                    <span style="color: red" ng-show="addForm.img.$error.required && addForm.img.$touched">请上传图片。</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2"><span class="star" style="color: white">* </span>配图预览</div>
+                <div class="col-sm-10"><span class="star">* </span>图片地址:
+                    <input  name="img" type="text" ng-model="detailParams.img"  required>
+                    <p style="color:red" ng-show="addForm.img.$dirty && addForm.img.$invalid">
+                        <span ng-show="addForm.img.$error.required">请上传图片。</span>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12" id="imgPreview">
+                    <img style="width: 30%" src="{{detailParams.img}}">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2"><span class="star">* </span>状态：</div>
+                <div class="col-sm-10" style="display: flex">
+                    <div style="margin-right: 2rem"><input type="radio" value="1" ng-model="detailParams.status" name="status" required>草稿</div>
+                    <div><input type="radio" value="2" ng-model="detailParams.status" name="status" required>上线</div>
+                    <span style="color:red" ng-show="addForm.status.$error.required &&  addForm.status.$touched">这一项是必填的。</span>
+                </div>
+            </div>
+            <div class="row">
+                <button type="submit" class="btn btn-primary" ng-click="addInfo()" ng-disabled="addForm.$invalid">上传</button>
+                <span><span style="color: red">*</span>是必填项</span>
+            </div>
+        </form>
+    </div>
+</div>

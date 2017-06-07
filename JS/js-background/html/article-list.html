@@ -1,7 +1,41 @@
-
-
-<div class="table">
-    <table border="1" cellspacing="0" rules="rows" bordercolor="gray">
+<div class="showSearch">
+    <div class="time">
+        <label for="startAt">发布时间：
+            <input class=" " type="date" id="startAt" name="startAt" data-ng-model="listParams.startAt">
+        </label>
+        一
+        <label for="endAt">
+            <input class=" " type="date" id="endAt" name="endAt" data-ng-model="listParams.endAt">
+        </label>
+    </div>
+    <label for="type">类别:
+        <select id="type" ng-model="listParams.type" name="type">
+            <option value="" >全部</option>
+            <option value="0">首页banner</option>
+            <option value="1">找职位banner</option>
+            <option value="2">找精英banner </option>
+            <option value="3">行业大图</option>
+        </select>
+    </label>
+    <label for="status">状态:
+        <select id="status" ng-model="listParams.status" name="status">
+            <option value="" >全部</option>
+            <option value="2">上线</option>
+            <option value="1">草稿</option>
+            </option>
+        </select>
+    </label>
+    <div>
+        <button class="btn btn-info" ng-click="searchMsg()">搜索</button>
+        <button class="btn btn-group" ng-click="resetMsg()">重置</button>
+    </div>
+</div>
+<div class="container" style="padding: 0;">
+    <div class="rowe">
+        <h4>Article列表</h4>
+        <a href="#article-add"> <button class="btn btn-info">+新增</button></a>
+    </div>
+    <table class="table table-striped">
         <tbody>
         <tr>
             <th>id</th>
@@ -16,17 +50,24 @@
         <tr ng-repeat="x in data">
             <td>{{x.id}}</td>
             <td>{{x.title}}</td>
-            <td>{{x.type }}</td>
-            <td>{{x.createAt }}</td>
-            <td>{{x.updateAt}}</td>
+            <td>{{x.type | typeFliter}}</td>
+            <td>{{x.createAt | date:"yyyy-MM-dd HH:mm"}}</td>
+            <td>{{x.updateAt | date:"yyyy-MM-dd HH:mm" }}</td>
             <td>{{x.author}}</td>
-            <td>{{x.status}}</td>
+            <td>{{x.status | statusFilter}}</td>
             <td>
-                <button>上/下线</button>
-                <button>编辑</button>
-                <button>删除</button>
+                <button  ng-click="changeStatus(x.id,x.status)">{{x.status | buttonFilter}}</button>
+                <a href="" ui-sref="article-detail({id:x.id})" style="color: black"><button >编辑</button></a>
+                <button  ng-click="delMsg(x.id)">删除</button>
             </td>
         </tr>
         </tbody>
     </table>
+    <div class="buttonGroups">
+        <button ng-click="firstPage()">首页</button>
+        <button ng-click="prePage()">上一页</button>
+        <input type="text" ng-model="listParams.page" ng-blur="inputPage()" maxlength="2">
+        <button ng-click="nextPage()">下一页</button>
+        <button ng-click="lastPage()">末页</button>
+    </div>
 </div>

@@ -10,10 +10,10 @@ body {
   justify-content: space-between;
   align-items: center; }
   .wrap .wrap-top .left {
-    width: 13rem;
+    width: 10%;
     color: white;
     background-color: grey;
-    font-size: 2.3rem;
+    font-size: 2rem;
     padding: .5rem .9rem; }
   .wrap .wrap-top .sing-out {
     margin: 0 1rem;
@@ -22,9 +22,11 @@ body {
 .wrap .min {
   display: flex; }
   .wrap .min .all {
-    width: 17rem;
+    width: 10%;
+    height: 94vh;
     background-color: grey;
-    border-right: solid 1px #dadace; }
+    border-right: solid 1px #dadace;
+    float: right; }
     .wrap .min .all a {
       color: white;
       text-decoration: none; }
@@ -36,16 +38,54 @@ body {
   .wrap .min .view-place {
     width: 70%; }
 
-div.ng-scope {
-  width: 100%;
-  display: flex;
-  justify-content: space-between; }
+div.container.ng-scope {
+  padding: 0;
+  margin: .5rem;
+  width: 98%; }
+  div.container.ng-scope .rowe {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 1rem;
+    border-top: solid 1px #D6D6D6; }
 
-.table {
+.table > tbody > tr > th {
+  text-align: center; }
+
+table.table.table-striped {
   text-align: center;
-  font-size: 1.5rem;
-  width: 100%; }
-  .table table {
-    width: 100%; }
+  margin: 0; }
+
+.buttonGroups {
+  text-align: center; }
+  .buttonGroups input {
+    width: 3rem;
+    text-align: center; }
+
+.viewArea {
+  width: 90%;
+  float: left; }
+
+.showSearch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem .5rem;
+  font-size: 1.5rem; }
+  .showSearch label {
+    margin: 0; }
+
+* span {
+  color: red; }
+
+.row {
+  margin: 1rem auto;
+  font-size: large; }
+
+div.wangEditor-container {
+  margin: 1rem auto auto 10px; }
+
+* btn {
+  height: 70%; }
 
 /*# sourceMappingURL=background.css.map */

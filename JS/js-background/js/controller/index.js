@@ -1,7 +1,7 @@
 /**
  * Created by Administrator on 2017/5/15.
  */
-//angular写法
+//登陆页
 var app = angular.module('indexApp',[]);
 app.controller('indexCtrl',function ($scope,$http) {
     $scope.enter=function () {
@@ -17,7 +17,7 @@ app.controller('indexCtrl',function ($scope,$http) {
                     console.log(reponse)
                     //.判断接口返回参数是否正确，正确则跳转，错误弹出警示框
                     if (reponse.data.code == 0){
-                        window.location.href="../html/background.html";
+                        window.location.href="../../html/background.html";
                     }else {
                         alert("错误的帐户名或密码！")
                     }
@@ -44,7 +44,6 @@ app.controller('indexCtrl',function ($scope,$http) {
 //         })
 //     })
 // });
-
 // 原生写法
 // $(function () {
 //     $("#send").click(function () {

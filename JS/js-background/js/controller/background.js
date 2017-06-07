@@ -1,7 +1,8 @@
 /**
  * Created by Administrator on 2017/5/16.
  */
-var app = angular.module("bgApp",['ui.router']);
+//路由
+var app = angular.module("bgApp",['ui.router','ngMessages','angularFileUpload']);
 app.config(function ($stateProvider,$urlRouterProvider) {
     $urlRouterProvider.when("", "/welcome");
     $stateProvider
@@ -15,10 +16,17 @@ app.config(function ($stateProvider,$urlRouterProvider) {
             controller:'listCtrl'
         })
         .state("article-detail", {
-            url:"/article-detail",
-            templateUrl: "article-detail.html"
+            url:"/article-detail?id",
+            templateUrl: "article-detail.html",
+             controller:'detail'
+        })
+        .state("article-add", {
+            url:"/article-add",
+            templateUrl: "article-add.html",
+            controller:'add'
         })
 });
+
 // angular.module('change',['ngRoute'])
 // .config([
 //     '$routeProvider',
