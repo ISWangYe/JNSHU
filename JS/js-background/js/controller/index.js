@@ -2,12 +2,12 @@
  * Created by Administrator on 2017/5/15.
  */
 //登陆页
-var app = angular.module('indexApp',[]);
-app.controller('indexCtrl',function ($scope,$http) {
+var app = angular.module('indexApp',['ui.router']);
+app.controller('indexCtrl',function ($scope,$http,$state) {
     $scope.enter=function () {
         $http({
             method:"post",
-            url:"a/a/login",
+            url:"/a/login",
            params:{
                 name:$scope.name,
                 pwd:$scope.pwd
@@ -18,11 +18,14 @@ app.controller('indexCtrl',function ($scope,$http) {
                     //.判断接口返回参数是否正确，正确则跳转，错误弹出警示框
                     if (reponse.data.code == 0){
                         window.location.href="../../html/background.html";
+                        // $state.go('html.background');
                     }else {
                         alert("错误的帐户名或密码！")
                     }
                 },
                 function errorCallback(reponse) {
+                    if(reponse.data.code !=0 )
+                    alert("登陆失败："+reponse.status)
                 }
             )
     }

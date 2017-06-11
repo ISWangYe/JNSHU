@@ -1,11 +1,11 @@
 <div class="showSearch">
     <div class="time">
         <label for="startAt">发布时间：
-            <input class=" " type="date" id="startAt" name="startAt" data-ng-model="listParams.startAt">
+            <input type="date" id="startAt" name="startAt" ng-model="startAt">
         </label>
         一
         <label for="endAt">
-            <input class=" " type="date" id="endAt" name="endAt" data-ng-model="listParams.endAt">
+            <input  type="date" id="endAt" name="endAt" ng-model="endAt">
         </label>
     </div>
     <label for="type">类别:
@@ -26,8 +26,14 @@
         </select>
     </label>
     <div>
-        <button class="btn btn-info" ng-click="searchMsg()">搜索</button>
-        <button class="btn btn-group" ng-click="resetMsg()">重置</button>
+        <button class="btn btn-info"
+                ui-sref="article-list({
+                type:listParams.type,
+                status:listParams.status,
+                startAt:startAt,
+                endAt:endAt })" ui-sref-opts="{reload:true}">搜索
+        </button>
+        <button class="btn btn-group" ui-sref="article-list({status:'',type:'',endAt:'',startAt:''})" ui-sref-opts="{reload:true}">重置</button>
     </div>
 </div>
 <div class="container" style="padding: 0;">
@@ -66,7 +72,8 @@
     <div class="buttonGroups">
         <button ng-click="firstPage()">首页</button>
         <button ng-click="prePage()">上一页</button>
-        <input type="text" ng-model="listParams.page" ng-blur="inputPage()" maxlength="2">
+        <input type="text" ng-model="listParams.page" maxlength="2">
+        <button ng-click="inputPage()">go</button>
         <button ng-click="nextPage()">下一页</button>
         <button ng-click="lastPage()">末页</button>
     </div>

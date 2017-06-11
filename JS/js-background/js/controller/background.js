@@ -2,7 +2,7 @@
  * Created by Administrator on 2017/5/16.
  */
 //路由
-var app = angular.module("bgApp",['ui.router','ngMessages','angularFileUpload']);
+var app = angular.module("bgApp",['ui.router', 'ngMessages','angularFileUpload']);
 app.config(function ($stateProvider,$urlRouterProvider) {
     $urlRouterProvider.when("", "/welcome");
     $stateProvider
@@ -11,19 +11,20 @@ app.config(function ($stateProvider,$urlRouterProvider) {
             templateUrl: "welcome.html"
         })
         .state("article-list", {
-            url:"/article-list",
+            // params:{"status":"","type":"","startAt":"","endAt":""},
+            url:"/article-list?status&type&endAt&startAt&page",
             templateUrl: "article-list.html",
             controller:'listCtrl'
         })
         .state("article-detail", {
             url:"/article-detail?id",
             templateUrl: "article-detail.html",
-             controller:'detail'
+             controller:'detail',
         })
         .state("article-add", {
             url:"/article-add",
             templateUrl: "article-add.html",
-            controller:'add'
+            controller:'add',
         })
 });
 

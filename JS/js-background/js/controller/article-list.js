@@ -1,43 +1,12 @@
 /**
  * Created by Administrator on 2017/5/18.
  */
-app.controller('listCtrl',function ($scope,$http) {
+app.controller('listCtrl',function ($scope,$http,$stateParams) {
     //对象初始化
-    $scope.listParams= {page:1}
-    //获取服务器数据
+    $scope.listParams= {};
     $scope.getMsg=function () {
-        //使时间戳变为合法数字
-        // if(isNaN($scope.startAt)){//当时间为NaN的时候，执行。
-        //     $scope.startAt=''
-        // }
-        // if(isNaN($scope.endAt)){
-        //     $scope.endAt=''
-        // }
-        $http({
-            method:"get",
-            url:"/a/a/article/search",
-            params:$scope.listParams
-        }).then(
-            //请求成功返回参数
-            function success(responce) {
-                console.log(responce);
-                $scope.data = responce.data.data.articleList;
-                //总页数向上取整
-                $scope.total = Math.ceil(responce.data.data.total/responce.data.data.size)
-            },
-            function error(responce) {
-            }
-        );
-    };
-    $scope.getMsg();
-    //搜索函数
-    $scope.searchMsg = function () {
-        $scope.listParams.startAt = Date.parse($scope.listParams.startAt);
-        $scope.listParams.endAt = Date.parse($scope.listParams.endAt);
-        if ($scope.listParams.startAt < $scope.listParams.endAt) {
-            $scope.listParams.endAt=$scope.listParams.endAt+1000*60*60*24-1;
-        }
-        //选中时间相等的时候会导致搜索错误，当相等的时候使后一天增加23小时59分钟，这样就搜索时间区间了
+        $scope.listParams.startAt=Date.parse($scope.startAt);
+        $scope.listParams.endAt=Date.parse($scope.endAt);
         if($scope.listParams.startAt == $scope.listParams.endAt ){
             $scope.listParams.endAt = $scope.listParams.startAt+1000*60*60*24-1;
         }
@@ -47,14 +16,62 @@ app.controller('listCtrl',function ($scope,$http) {
         if(isNaN($scope.listParams.endAt)){
             $scope.listParams.endAt= ""
         }
+        $http({
+            method:"get",
+            url:"/a/article/search",
+            params:$scope.listParams
+        }).then(
+            //请求成功返回参数
+            function success(responce) {
+                $scope.data = responce.data.data.articleList;
+                //总页数向上取整
+                $scope.total = Math.ceil(responce.data.data.total/responce.data.data.size)
+            },
+            function error(responce) {
+            }
+        );
+    };
+    if($stateParams!=undefined)  {
+        $scope.listParams=$stateParams;
+        console.log($scope.listParams);
+        $scope.startAt=new Date($scope.listParams.startAt);
+        $scope.endAt= new Date($scope.listParams.endAt);
         $scope.listParams.page = 1;
         $scope.getMsg();
-    };
-    //重置参数
-    $scope.resetMsg=function () {
-        $scope.listParams= {page:1}
+    }
+    else {
+        $scope.listParams= {page:1};
         $scope.getMsg();
     };
+
+    //获取服务器数据
+    //搜索函数
+    // $scope.searchMsg = function () {
+    //     $scope.listParams.startAt = Date.parse($scope.startAt);
+    //     $scope.listParams.endAt = Date.parse($scope.endAt);
+    //     if ($scope.listParams.startAt < $scope.listParams.endAt) {
+    //         $scope.listParams.endAt=$scope.listParams.endAt+1000*60*60*24-1;
+    //     }
+        //选中时间相等的时候会导致搜索错误，当相等的时候使后一天增加23小时59分钟，这样就搜索时间区间了
+        // if($scope.listParams.startAt == $scope.listParams.endAt ){
+        //     $scope.listParams.endAt = $scope.listParams.startAt+1000*60*60*24-1;
+        // }
+        // if(isNaN($scope.listParams.startAt)){
+        //     $scope.listParams.startAt= ""
+        // }
+        // if(isNaN($scope.listParams.endAt)){
+        //     $scope.listParams.endAt= ""
+        // }
+        // $scope.listParams.page = 1;
+        // $scope.getMsg();
+    // };
+    //重置参数
+    // $scope.resetMsg=function () {
+    //     $scope.startAt = '';
+    //     $scope.endAt = '';
+    //     $scope.listParams= {page:1};
+    //     $scope.getMsg();
+    // };
     //上下线函数
     $scope.changeStatus = function (id,status) {
         if (status == 1){
@@ -65,9 +82,9 @@ app.controller('listCtrl',function ($scope,$http) {
         }
         $http({
             method:'put',
-            url:"/a/a/u/article/status",
-            params:{
-                id:id,
+                url:"/a/u/article/status",
+                params:{
+                    id:id,
                 status:status
             }
         })
@@ -91,7 +108,7 @@ app.controller('listCtrl',function ($scope,$http) {
         if (confirm("确认删除？")) {
             $http({
                 method: 'delete',
-                url: '/a/a/u/article/' + id
+                url: '/a/u/article/' + id
             }).then(function success(responce) {
                 console.log(responce);
                 if(responce.data.code==0){
@@ -121,7 +138,8 @@ app.controller('listCtrl',function ($scope,$http) {
     // 查找页
     $scope.inputPage = function () {
         if(isNaN($scope.listParams.page)){
-            alert("请输入数字")
+            alert("请输入数字");
+            $scope.listParams.page = 1;
         }
         else {
             if ($scope.listParams.page < 1) {

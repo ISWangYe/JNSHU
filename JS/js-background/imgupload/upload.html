@@ -1,0 +1,51 @@
+<form class="form-group">
+    <label class="col-sm-2 control-label">{{labelName}}</label>
+    <div class="col-sm-12" ng-if="uploader">
+        <label class="btn btn-primary" for="ffe">点击上传图片</label>
+        <p>{{tip}}</p>
+        <input id="ffe" style="display: none" type="file" accept=".jpg,.png,.bmp" class="form-control" nv-file-select=""
+               uploader="uploader" multiple
+               ng-click="clearItem()" onchange="angular.element(this).scope().$parent.getUrl(this.files)"
+               required>
+        <div class="col-xs-8" ng-show="uploader.queue.length||logoUrl">
+            <img style="max-height: 300px" ng-src="{{imgURL||logoUrl}}">
+        </div>
+
+        <table class="table table-bordered ">
+            <tr class="active">
+                <th>图片名</th>
+                <th>文件大小</th>
+                <th>进度</th>
+                <th>操作</th>
+                <th>操作</th>
+            </tr>
+            <tr class="text-center" ng-repeat="item in uploader.queue">
+                <td>{{item.file.name}}</td>
+                <td>{{ item.file.size/1024/1024|number:2 }} MB</td>
+                <td>
+                    <div class="progress rest-mr" style="magin:0;!important;">
+                        <div class="progress-bar progress-bar-success" role="progressbar"
+                             aria-valuenow="{{item.progress + '%'}}"
+                             aria-valuemin="0" aria-valuemax="100" ng-style="{ 'width': item.progress + '%' }">
+                            <span class="sr-only"></span>
+                        </div>
+                    </div>
+                </td>
+                <td><span class="glyphicon"
+                          ng-class="{'glyphicon-ok':item.isSuccess,'glyphicon-remove':item.isError}"></span></td>
+                <td class="btn-group-xs" ng-if="item">
+                    <button class="btn btn-success" ng-click="item.upload()"
+                            ng-disabled="item.isReady || item.isUploading || item.isSuccess">
+                        <span class="glyphicon glyphicon-upload" style="vertical-align: text-top"></span>
+                        上传
+                    </button>
+                    <button class="btn btn-danger" ng-click="item.remove();remove()"><span
+                            class="glyphicon glyphicon-trash"
+                            style="vertical-align: text-top"></span>删除
+                    </button>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+</form>

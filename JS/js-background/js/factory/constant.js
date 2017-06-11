@@ -1,20 +1,19 @@
 /**
  * Created by Administrator on 2017/6/5.
  */
-angular.module('bgApp').constant('allSel',{
-    'textype':[
+angular.module('bgApp')
+    .constant('type',[
         {id:0,text:"首页banner"},
         {id:1,text:"找职位banner"},
         {id:2,text:"找精英banner"},
         {id:3,text:"行业大图"}
-    ],
-    'textstatus':[
-        {id:0,text:"移动互联网"},
-        {id:1,text:"电子商务"},
-        {id:2,text:"企业服务"},
-        {id:3,text:"企业服务"},
-        {id:4,text:"教育"},
-        {id:5,text:"金融"},
-        {id:6,text:"游戏"}
-    ]
-});
+    ])
+    .constant('status',[
+            {id:0,text:"移动互联网"},
+            {id:1,text:"电子商务"},
+            {id:2,text:"企业服务"},
+            {id:3,text:"企业服务"},
+            {id:4,text:"教育"},
+            {id:5,text:"金融"},
+            {id:6,text:"游戏"}
+    ]);
